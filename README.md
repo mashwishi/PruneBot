@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Prune Bot (BETA)</h1>
+  <h1>Prune Bot </h1>
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
@@ -19,6 +19,7 @@
 We will be adding 'Required Permission' on the next update.</a></h4>
 
   <strong><a href="http://bit.ly/PruneBot">INVITE BOT TO YOUR SERVER</a></strong>
+  <h4>Hey I'm PruneBot, Wanna try me? becareful im currently on beta ;)</h4>
 </div>
 
 ---
