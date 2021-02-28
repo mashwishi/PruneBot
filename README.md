@@ -5,7 +5,7 @@
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
 
-  [![support][support-image]][support-invite]
+  [![support][support-image]][support-invite] &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/w9R5l1T.png" width="27%"/>
   
  [![Contributors][contributors-shield]][contributors-url]
  [![Forks][forks-shield]][forks-url]
