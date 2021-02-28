@@ -62,7 +62,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
     .setTitle('Commands & Information')
     .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
     .setDescription('')
-    .setThumbnail('https://i.imgur.com/LtInsMQ.png')
+    .setThumbnail('https://i.imgur.com/ypxq7B9.png')
     .addFields(
       { name: '!help', value: 'To show all of the available bot commands.' },
       { name: '!fetch', value: 'To fetch/update all the data cache.' },
