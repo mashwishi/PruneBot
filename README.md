@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/ypxq7B9.png" width="15%"/>
+  <img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/>
   <h1>Prune Bot </h1>
 
 
