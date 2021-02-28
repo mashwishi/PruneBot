@@ -2,8 +2,8 @@
   <h1>Prune Bot</h1>
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   
-  <h6>Fellow Developers that helped me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.</h6>
-  <h6>Special Thanks to <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
+  <h6>Fellow Developers that helped me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
+  <br>Special Thanks to <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
   
   
   [![support][support-image]][support-invite]
