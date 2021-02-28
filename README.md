@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://i.imgur.com/ypxq7B9.png" width="15%"/>
   <h1>Prune Bot </h1>
+  <img src="https://i.imgur.com/ypxq7B9.png" width="15%"/>
+
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
