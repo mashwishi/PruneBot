@@ -1,7 +1,6 @@
 require ('dotenv').config()
 const Discord = require("discord.js");
 const client = new Discord.Client();
-//const config = require("./config.json");
 const config = process.env;
 const talkedRecently = new Set();
 
@@ -9,8 +8,8 @@ const talkedRecently = new Set();
 client.on("ready", () => {
   console.log("Online!");
   client.user.setStatus("online");
-  //client.user.setActivity('this server.', { type: 'WATCHING' }); 
-  client.user.setActivity('your mom.', { type: 'PLAYING' }); 
+  client.user.setActivity('this server.', { type: 'WATCHING' }); 
+  //client.user.setActivity('your mom.', { type: 'PLAYING' }); 
 });
 
 client.on("error", error => {
