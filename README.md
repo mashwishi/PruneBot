@@ -4,7 +4,9 @@
   
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
-  
+
+  <img src="https://discordapp.com/api/guilds/[SERVER ID]/widget.png?style=banner1" alt="Discord Banner 1"/>
+
   [![support][support-image]][support-invite]
   
  [![Contributors][contributors-shield]][contributors-url]
