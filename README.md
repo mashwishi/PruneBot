@@ -50,14 +50,15 @@ Command|Description
 
 Command|Description
 -|-
-**`!prune <day(s)> <role>`**|Kick inactive users with the specific day(s) and role.
-**`!kick <user>`**|Kick the mentioned user.
-**`!prefix <prefix>`**|Custom bot prefix.
-**`!status <offline|online|idle|dnd>`**|Bot Status.
-**`!activity <watching|playing|listening> <message>`**|Bot Activity.
-**`!avatar <other user|self> <small|big>`**|Take user's avatar.
-**`!userid <other user|self> <small|big>`**|Print the User ID of the specific user.
-**`!role <set|remove> <role> <user>`**|Add/Remove role from the user.
+**`!prune`**|Kick inactive users with the specific day(s) and role.
+**`!kick`**|Kick the mentioned user.
+**`!prefix`**|Custom bot prefix.
+**`!status`**|Bot Status.
+**`!activity`**|Bot Activity.
+**`!avatar`**|Take user's avatar.
+**`!userid`**|Print the User ID of the specific user.
+**`!role`**|Add/Remove role from the user.
+**`!clear`**|Clear messages to the channel.
 
 <h2 align="center">Self-hosting</h2>
 
