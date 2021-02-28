@@ -13,7 +13,7 @@
  [![Issues][issues-shield]][issues-url]
  [![MIT License][license-shield]][license-url]
 
-
+  [![donate][donate-image]][donate-link]
   <br>
   <h4>Warning: This bot is currently under development,<br>
 We will be adding 'Required Permission' on the next update.</a></h4>
@@ -95,6 +95,8 @@ This is how you will set-up your self-hosted Prune Bot.
 [support-invite]: https://discord.gg/qpkRST8MMb
 [support-image]: https://discordapp.com/api/guilds/815657126705889320/widget.png?style=banner2
 
+[donate-link]: https://www.paypal.me/NCMC
+[donate-image]: https://i.imgur.com/R2SxfKG.png
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/mashwishi/PruneBot.svg?style=for-the-badge
