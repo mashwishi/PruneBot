@@ -76,7 +76,7 @@ This is how you will set-up your self-hosted Prune Bot.
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/mashwishi/pronebot.git
+   git clone https://github.com/mashwishi/prunebot.git
    ```
 2. Install NPM packages
    ```sh
