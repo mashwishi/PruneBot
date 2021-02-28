@@ -13,7 +13,6 @@
  [![Issues][issues-shield]][issues-url]
  [![MIT License][license-shield]][license-url]
 
-  [![donate][donate-image]][donate-link]
   <br>
   <h4>Warning: This bot is currently under development,<br>
 We will be adding 'Required Permission' on the next update.</a></h4>
@@ -90,6 +89,7 @@ This is how you will set-up your self-hosted Prune Bot.
    ownerID=<your id here>
    ```
 
+  [![donate][donate-image]][donate-link]
 
 
 [support-invite]: https://discord.gg/qpkRST8MMb
