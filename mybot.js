@@ -60,10 +60,9 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
     const ListEmbed = new Discord.MessageEmbed() 
     .setColor('#0099ff')
     .setTitle('Commands & Information')
-    .setURL('https://discord.gg/mMJ7ea229A')
-    .setAuthor('Prune Bot', 'https://i.imgur.com/HsHPRgv.jpg', 'https://www.facebook.com/Mashwishi')
+    .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
     .setDescription('')
-    .setThumbnail('https://i.imgur.com/LYdziyV.gif')
+    .setThumbnail('https://i.imgur.com/LtInsMQ.png')
     .addFields(
       { name: '!help', value: 'To show all of the available bot commands.' },
       { name: '!fetch', value: 'To fetch/update all the data cache.' },
