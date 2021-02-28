@@ -16,7 +16,7 @@
 
 
   <br>
-  <strong><a href="#">CLICK HERE TO ADD THE BOT TO YOUR SERVER</a></strong>
+  <strong><a href="#">INVITE BOT [SOON]</a></strong>
 </div>
 
 ---
@@ -41,6 +41,29 @@ Command|Description
 **We ask you to please not host your own instance of PruneBot.** Even though our license allows it, self-hosted instances of the bot have brought us a lot of headache in the past. If you're considering self-hosting, please [try the official instance of the bot first](https://github.com/mashwishi/PruneBot/#). If you have any concerns about the security of our instance, please contact us. We'd love to talk and answer any questions you have.
 
 > If you're really really really going to self-host the bot, please [read our license](https://github.com/mashwishi/PruneBot/blob/master/LICENSE) first, and be aware that we don't provide any self-hosting support. **You'll be on your own.**
+
+## Getting Started
+
+This is how you will set-up your self-hosted Prune Bot.
+
+### Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/mashwishi/pronebot.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install discord.js
+   npm install dotenv
+   ```
+3. Create `.env` file to the same folder of the PruneBot then copy and fill this:
+   ```env
+   token=<your bot token here>
+   prefix=!
+   ownerID=<your id here>
+   ```
+
+
 
 [support-invite]: https://discord.gg/qpkRST8MMb
 [support-image]: https://media.discordapp.net/attachments/815657127082983435/815677849843400704/unknown.png
