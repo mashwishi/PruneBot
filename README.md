@@ -16,7 +16,9 @@
 
 
   <br>
-  <h6>Warning: This bot is currently under development, We will be adding "Require Permission" soon..</a>.
+  <h6>Warning: This bot is currently under development,
+  We will be adding "Require Permission" soon.</a>.</h6>
+<br>
   <strong><a href="http://bit.ly/PruneBot">INVITE BOT</a></strong>
 </div>
 
