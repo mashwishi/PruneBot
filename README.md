@@ -5,7 +5,6 @@
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
   
-  
   [![support][support-image]][support-invite]
   
  [![Contributors][contributors-shield]][contributors-url]
@@ -93,7 +92,7 @@ This is how you will set-up your self-hosted Prune Bot.
 
 
 [support-invite]: https://discord.gg/qpkRST8MMb
-[support-image]: https://media.discordapp.net/attachments/815657127082983435/815707789644922880/unknown.png
+[support-image]: https://discordapp.com/api/guilds/815657126705889320/widget.png?style=banner2
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
