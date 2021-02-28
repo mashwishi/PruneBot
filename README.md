@@ -19,7 +19,7 @@
 We will be adding 'Required Permission' on the next update.</a></h4>
 
   <strong><a href="http://bit.ly/PruneBot">INVITE BOT TO YOUR SERVER</a></strong>
-  <h4>Hey I'm PruneBot, Wanna try me? becareful im currently on beta ;)</h4>
+  <h6>Be careful, I'm currently on beta!</h6>
 </div>
 
 ---
