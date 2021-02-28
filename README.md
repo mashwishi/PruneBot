@@ -89,8 +89,12 @@ This is how you will set-up your self-hosted Prune Bot.
    ownerID=<your id here>
    ```
 
+---
+
   [![donate][donate-image]][donate-link]
 
+
+---
 
 [support-invite]: https://discord.gg/qpkRST8MMb
 [support-image]: https://discordapp.com/api/guilds/815657126705889320/widget.png?style=banner2
