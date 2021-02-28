@@ -1,6 +1,7 @@
 <div align="center">
-  <h1>Prune Bot </h1>
   <img src="https://i.imgur.com/ypxq7B9.png" width="15%"/>
+  <h1>Prune Bot </h1>
+
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   
