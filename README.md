@@ -32,9 +32,25 @@ PruneBot is a free and open source solution to your server and user managing pro
 
 <h2 align="center">Commands</h2>
 
+<h6>Current Commands | Version 1.0.0</h6>
+
 Command|Description
 -|-
 **`!help`**|To show all of the available bot commands
+**`!fetch`**|To fetch/update all the data cache.
+**`!krole <role>`**|Kick all the users with the specific role.
+**`!urole <role>`**|List all the users with the mentioned role.
+**`!knorole`**|Kick all the users without role.
+**`!unorole`**|List all the users without role.
+**`!roles`**|List and count all the roles in the server.
+**`!roleid <role>`**|Print the Role ID of the specific role.
+**`!shutdown`**|Shutdown the discord bot.
+
+<h6>Coming Soon | Version 1.5.0</h6>
+
+Command|Description
+-|-
+**`!prune <day(s)> <role>`**|Kick inactive users with the specific day(s) and role.
 
 <h2 align="center">Self-hosting</h2>
 
