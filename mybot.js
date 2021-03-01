@@ -36,9 +36,9 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
     .setColor('#0099ff')
     .setTitle('Commands & Information')
     .setURL('https://discord.gg/mMJ7ea229A')
-    .setAuthor('Prune Bot', 'https://i.imgur.com/HsHPRgv.jpg', 'https://www.facebook.com/Mashwishi')
+    .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
     .setDescription('')
-    .setThumbnail('https://i.imgur.com/LYdziyV.gif')
+    .setThumbnail('https://i.imgur.com/ypxq7B9.png')
     .addFields(
       { name: '!help', value: 'To show all of the available bot commands.' },
       { name: '!fetch', value: 'To fetch/update all the data cache.' },
@@ -47,8 +47,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
       { name: '!knorole', value: 'Kick all the users without role.' },
       { name: '!unorole', value: 'List all the users without role.' },          
       { name: '!roles', value: 'List and count all the roles in the server.' },
-      { name: '!roleid <role>', value: 'Print the Role ID of the specific role.' },
-      { name: '[Soon] !prune <day(s)> <role>', value: 'Kick inactive users with the specific day(s) and role.'},          
+      { name: '!roleid <role>', value: 'Print the Role ID of the specific role.' },   
       { name: '!shutdown', value: 'Shutdown the discord bot.' }, 
       //{ name: '\u200B', value: '\u200B' },
       //{ name: 'Inline field title', value: 'Some value here', inline: true },
