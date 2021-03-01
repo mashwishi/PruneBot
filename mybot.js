@@ -1,6 +1,7 @@
 require ('dotenv').config()
 const Discord = require("discord.js");
 const client = new Discord.Client();
+//const config = require("./config.json");
 const config = process.env;
 const talkedRecently = new Set();
 
@@ -8,8 +9,8 @@ const talkedRecently = new Set();
 client.on("ready", () => {
   console.log("Online!");
   client.user.setStatus("online");
-  client.user.setActivity('this server.', { type: 'WATCHING' }); 
-  //client.user.setActivity('your mom.', { type: 'PLAYING' }); 
+  //client.user.setActivity('this server.', { type: 'WATCHING' }); 
+  client.user.setActivity('your mom.', { type: 'PLAYING' }); 
 });
 
 client.on("error", error => {
@@ -30,6 +31,12 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
 
 //cache all the data
   client.on('message', async message => {
+//check if no perm
+if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }//if there's admin permission
+else{
+//cache all the data     
   if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
     message.reply('Updating the user datas...');    
     message.guild.members.fetch()
@@ -60,9 +67,10 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
     const ListEmbed = new Discord.MessageEmbed() 
     .setColor('#0099ff')
     .setTitle('Commands & Information')
-    .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
+    .setURL('https://discord.gg/mMJ7ea229A')
+    .setAuthor('Prune Bot', 'https://i.imgur.com/HsHPRgv.jpg', 'https://www.facebook.com/Mashwishi')
     .setDescription('')
-    .setThumbnail('https://i.imgur.com/ypxq7B9.png')
+    .setThumbnail('https://i.imgur.com/LYdziyV.gif')
     .addFields(
       { name: '!help', value: 'To show all of the available bot commands.' },
       { name: '!fetch', value: 'To fetch/update all the data cache.' },
@@ -274,7 +282,7 @@ if (message.content.toLowerCase().startsWith(config.prefix + "prune")) {
         message.reply(`I'm currently not available :(`);
 
 }
-
+} 
 });
 
 client.login(process.env.token);
