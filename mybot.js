@@ -5,7 +5,6 @@ const client = new Discord.Client();
 const config = process.env;
 const talkedRecently = new Set();
 
-
 client.on("ready", () => {
   console.log("Online!");
   client.user.setStatus("online");
@@ -34,8 +33,11 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
 //check if no perm
 if(!message.member.hasPermission("ADMINISTRATOR")){
       return message.reply("You don't have permission to do that!");
-    }//if there's admin permission
+    }
+    
+//if there's admin permission
 else{
+  
 //cache all the data     
   if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
     message.reply('Updating the user datas...');    
