@@ -8,8 +8,7 @@ const talkedRecently = new Set();
 client.on("ready", () => {
   console.log("Online!");
   client.user.setStatus("online");
-  //client.user.setActivity('this server.', { type: 'WATCHING' }); 
-  client.user.setActivity('your mom.', { type: 'PLAYING' }); 
+  client.user.setActivity('this server.', { type: 'WATCHING' }); 
 });
 
 client.on("error", error => {
@@ -28,42 +27,9 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   }
 };
 
-//cache all the data
-  client.on('message', async message => {
-//check if no perm
-if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
-    }
+//commands and functions
+ client.on('message', async message => {
     
-//if there's admin permission
-else{
-  
-//cache all the data     
-  if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
-    message.reply('Updating the user datas...');    
-    message.guild.members.fetch()
-    .then(console.log)
-    message.reply('The data in cache has been updated!')  
-    .catch(console.error);    
-  }
-
-//role count and list
-  if (message.content.toLowerCase().startsWith(config.prefix + "roles")) {
-    message.guild.members.fetch()
-    let rolemap = message.guild.roles.cache
-    .sort((a, b) => b.position - a.position)
-    .map(r => r)
-    .join(",");
-    if (rolemap.length > 1024) rolemap = "To many roles to display";
-    if (!rolemap) rolemap = "No roles";
-    const rolesembed = new Discord.MessageEmbed()
-    .setTitle('Prune Bot | Sever Roles')   
-    .setDescription("")
-    .addField("Role List:" , rolemap, true)   
-    .addField("Total Roles:", `${message.guild.roles.cache.size}` , true)     
-    message.channel.send(rolesembed);
-  }
-
 //help
   if (message.content.toLowerCase().startsWith(config.prefix + "help")) {
     const ListEmbed = new Discord.MessageEmbed() 
@@ -93,7 +59,41 @@ else{
     .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
 
   message.channel.send(ListEmbed);     
-  }    
+  }        
+    
+//check if no perm
+if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }
+    
+//if there's admin permission can access admin commands
+else{
+  
+//cache all the data     
+  if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
+    message.reply('Updating the user datas...');    
+    message.guild.members.fetch()
+    .then(console.log)
+    message.reply('The data in cache has been updated!')  
+    .catch(console.error);    
+  }
+
+//role count and list
+  if (message.content.toLowerCase().startsWith(config.prefix + "roles")) {
+    message.guild.members.fetch()
+    let rolemap = message.guild.roles.cache
+    .sort((a, b) => b.position - a.position)
+    .map(r => r)
+    .join(",");
+    if (rolemap.length > 1024) rolemap = "To many roles to display";
+    if (!rolemap) rolemap = "No roles";
+    const rolesembed = new Discord.MessageEmbed()
+    .setTitle('Prune Bot | Sever Roles')   
+    .setDescription("")
+    .addField("Role List:" , rolemap, true)   
+    .addField("Total Roles:", `${message.guild.roles.cache.size}` , true)     
+    message.channel.send(rolesembed);
+  }
 
 //shutdown
   if (message.content.toLowerCase().startsWith(config.prefix + "shutdown")) {
