@@ -59,16 +59,13 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   message.channel.send(ListEmbed);     
   }        
     
-//check if no perm
-if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
-    }
-    
-//if there's admin permission can access admin commands
-else{
   
 //cache all the data     
   if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }    
     message.reply('Updating the user datas...');    
     message.guild.members.fetch()
     .then(console.log)
@@ -78,6 +75,10 @@ else{
 
 //role count and list
   if (message.content.toLowerCase().startsWith(config.prefix + "roles")) {
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }      
     message.guild.members.fetch()
     let rolemap = message.guild.roles.cache
     .sort((a, b) => b.position - a.position)
@@ -96,7 +97,10 @@ else{
 //shutdown
   if (message.content.toLowerCase().startsWith(config.prefix + "shutdown")) {
       message.reply('The bot will now shut down.\n'+ 'Confirm with a thumb up or deny with a thumb down.');
-      
+      //check if no perm
+      if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+      }              
       // Reacts so the user only have to click the emojis
         message.react('👍').then(r => {
         message.react('👎');
@@ -119,7 +123,10 @@ else{
 
 //role mention to role id
   if (message.content.toLowerCase().startsWith(config.prefix + "roleid")) {
-
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }  
     let mentionedrole = message.mentions.roles.firstKey()
     const withoutPrefix = message.content.slice(config.prefix.length);
     const split = withoutPrefix.split(/ +/);
@@ -140,7 +147,10 @@ else{
 
 //kick all users with the specific role
   if (message.content.toLowerCase().startsWith(config.prefix + "krole")) {
-    
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }      
     let mentionedrole = message.mentions.roles.firstKey()
     const withoutPrefix = message.content.slice(config.prefix.length);
     const split = withoutPrefix.split(/ +/);
@@ -184,7 +194,10 @@ else{
 
 //list of users that has the specific role
   if (message.content.toLowerCase().startsWith(config.prefix + "urole")) {
-
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }  
     //gather latest data
     message.guild.members.fetch()
 
@@ -217,7 +230,10 @@ else{
 
 //list of users without role
 if (message.content.toLowerCase().startsWith(config.prefix + "unorole")) {
-
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }  
       //gather latest data
       message.guild.members.fetch()
         
@@ -241,7 +257,10 @@ if (message.content.toLowerCase().startsWith(config.prefix + "unorole")) {
 
 //kick all users without role
 if (message.content.toLowerCase().startsWith(config.prefix + "knorole")) {
-    
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }      
       //gather the latest data first
       message.guild.members.fetch()
       //count members will be kicked
@@ -278,11 +297,14 @@ if (message.content.toLowerCase().startsWith(config.prefix + "knorole")) {
 
 //prune
 if (message.content.toLowerCase().startsWith(config.prefix + "prune")) {
-    
+    //check if no perm
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+      return message.reply("You don't have permission to do that!");
+    }      
         message.reply(`I'm currently not available :(`);
 
 }
-} 
+
 });
 
 client.login(process.env.token);
