@@ -35,7 +35,6 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
     const ListEmbed = new Discord.MessageEmbed() 
     .setColor('#b491c8')
     .setTitle('Commands & Information')
-    .setURL('https://discord.gg/mMJ7ea229A')
     .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
     .setDescription('')
     .setThumbnail('https://i.imgur.com/ypxq7B9.png')
