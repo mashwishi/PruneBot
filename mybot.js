@@ -98,7 +98,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "shutdown")) {
       message.reply('The bot will now shut down.\n'+ 'Confirm with a thumb up or deny with a thumb down.');
       //check if no perm
-      if(!message.member.hasPermission("ADMINISTRATOR")){
+      if(message.author.id !== config.ownerID){
       return message.reply("You don't have permission to do that!");
       }              
       // Reacts so the user only have to click the emojis
