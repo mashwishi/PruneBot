@@ -38,7 +38,8 @@ PruneBot is a free and open source solution to your server and user managing pro
 
 <h2 align="center">Commands</h2>
 
-<h6>Current Commands | Version 1.0.0</h6>
+<h5>Current Commands | Version 1.0.9</h5>
+<p>Note: You must have Administrator Permission to use this commands.</p>
 
 Command|Description
 -|-
@@ -52,7 +53,7 @@ Command|Description
 **`!roleid <role>`**|Print the Role ID of the specific role.
 **`!shutdown`**|Shutdown the discord bot.
 
-<h6>Coming Soon | Version 1.5.0</h6>
+<h5>Coming Soon | Version 1.5.0</h5>
 
 Command|Description
 -|-
