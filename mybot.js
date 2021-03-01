@@ -33,7 +33,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
 //help
   if (message.content.toLowerCase().startsWith(config.prefix + "help")) {
     const ListEmbed = new Discord.MessageEmbed() 
-    .setColor('#0099ff')
+    .setColor('#b491c8')
     .setTitle('Commands & Information')
     .setURL('https://discord.gg/mMJ7ea229A')
     .setAuthor('Prune Bot', 'https://i.imgur.com/ypxq7B9.png', 'https://discord.com/invite/qpkRST8MMb')
@@ -209,7 +209,7 @@ else{
           const ListEmbed = new Discord.MessageEmbed() 
           .setTitle(`Prune Bot | Users`)
           .setDescription(`Users that has ${therole} role.`)
-          .setColor('#0099ff')
+          .setColor('#b491c8')
           .addFields(
             { name: 'Users:', value: message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') },)
           .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
@@ -231,7 +231,7 @@ if (message.content.toLowerCase().startsWith(config.prefix + "unorole")) {
         const ListEmbed = new Discord.MessageEmbed() 
         .setTitle(`Prune Bot | Users`)
         .setDescription(`Users that has no role.`)
-        .setColor('#0099ff')
+        .setColor('#b491c8')
         .addFields(
          { name: 'Users:', value: message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n') },)
         .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
