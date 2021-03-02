@@ -47,6 +47,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
       { name: '!unorole', value: 'List all the users without role.' },          
       { name: '!roles', value: 'List and count all the roles in the server.' },
       { name: '!roleid <role>', value: 'Print the Role ID of the specific role.' },   
+      { name: 'NOTE:', value: 'Bot & User must have Administrator Permission to be able to use this.' },   
       //{ name: '\u200B', value: '\u200B' },
       //{ name: 'Inline field title', value: 'Some value here', inline: true },
       //{ name: 'Inline field title', value: 'Some value here', inline: true },
@@ -63,7 +64,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }    
     message.reply('Updating the user datas...');    
     message.guild.members.fetch()
@@ -76,7 +77,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "roles")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }      
     message.guild.members.fetch()
     let rolemap = message.guild.roles.cache
@@ -98,7 +99,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
       message.reply('The bot will now shut down.\n'+ 'Confirm with a thumb up or deny with a thumb down.');
       //check if no perm
       if(message.author.id !== config.ownerID){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("Your not the Bot Owner to do that!");
       }              
       // Reacts so the user only have to click the emojis
         message.react('👍').then(r => {
@@ -124,7 +125,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "roleid")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }  
     let mentionedrole = message.mentions.roles.firstKey()
     const withoutPrefix = message.content.slice(config.prefix.length);
@@ -148,7 +149,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "krole")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }      
     let mentionedrole = message.mentions.roles.firstKey()
     const withoutPrefix = message.content.slice(config.prefix.length);
@@ -195,7 +196,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
   if (message.content.toLowerCase().startsWith(config.prefix + "urole")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }  
     //gather latest data
     message.guild.members.fetch()
@@ -231,7 +232,7 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
 if (message.content.toLowerCase().startsWith(config.prefix + "unorole")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }  
       //gather latest data
       message.guild.members.fetch()
@@ -258,7 +259,7 @@ if (message.content.toLowerCase().startsWith(config.prefix + "unorole")) {
 if (message.content.toLowerCase().startsWith(config.prefix + "knorole")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }      
       //gather the latest data first
       message.guild.members.fetch()
@@ -298,7 +299,7 @@ if (message.content.toLowerCase().startsWith(config.prefix + "knorole")) {
 if (message.content.toLowerCase().startsWith(config.prefix + "prune")) {
     //check if no perm
     if(!message.member.hasPermission("ADMINISTRATOR")){
-      return message.reply("You don't have permission to do that!");
+      return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
     }      
         message.reply(`I'm currently not available :(`);
 
