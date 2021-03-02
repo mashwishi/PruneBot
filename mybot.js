@@ -47,7 +47,6 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
       { name: '!unorole', value: 'List all the users without role.' },          
       { name: '!roles', value: 'List and count all the roles in the server.' },
       { name: '!roleid <role>', value: 'Print the Role ID of the specific role.' },   
-      { name: '!shutdown', value: 'Shutdown the discord bot.' }, 
       //{ name: '\u200B', value: '\u200B' },
       //{ name: 'Inline field title', value: 'Some value here', inline: true },
       //{ name: 'Inline field title', value: 'Some value here', inline: true },
