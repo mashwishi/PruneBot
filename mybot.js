@@ -96,11 +96,11 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
 
 //shutdown
   if (message.content.toLowerCase().startsWith(config.prefix + "shutdown")) {
-      message.reply('The bot will now shut down.\n'+ 'Confirm with a thumb up or deny with a thumb down.');
       //check if no perm
       if(message.author.id !== config.ownerID){
       return message.reply("Your not the Bot Owner to do that!");
-      }              
+      }        
+      message.reply('The bot will now shut down.\n'+ 'Confirm with a thumb up or deny with a thumb down.');            
       // Reacts so the user only have to click the emojis
         message.react('👍').then(r => {
         message.react('👎');
@@ -119,7 +119,15 @@ client.awaitReply = async (message, question, limit = 15000, embed = {}) => {
             message.reply('No reaction after 30 seconds, operation canceled');
         });
   }  
-
+//count how many servers the bot in...
+if (message.content.toLowerCase().startsWith(config.prefix + "servers")) {
+  //check if no perm
+  if(message.author.id !== config.ownerID){
+  return message.reply("Your not the Bot Owner to do that!");
+  }          
+  client.guilds.fetch()
+  message.reply(`Your bot is in **${client.guilds.cache.size}** server(s).`)   
+}    
 
 //role mention to role id
   if (message.content.toLowerCase().startsWith(config.prefix + "roleid")) {
