@@ -125,7 +125,6 @@ if (message.content.toLowerCase().startsWith(config.prefix + "servers")) {
   if(message.author.id !== config.ownerID){
   return message.reply("Your not the Bot Owner to do that!");
   }          
-  client.guilds.fetch()
   message.reply(`Your bot is in **${client.guilds.cache.size}** server(s).`)   
 }    
 
