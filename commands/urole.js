@@ -12,8 +12,6 @@ module.exports.run = async (bot, message, args) => {
             if(!message.member.hasPermission("ADMINISTRATOR")){
               return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
             }  
-            //gather latest data
-            message.guild.members.fetch()
         
             let mentionedrole = message.mentions.roles.firstKey()
             const withoutPrefix = message.content.slice(config.prefix.length);

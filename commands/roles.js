@@ -12,7 +12,6 @@ module.exports.run = async (bot, message, args) => {
             if(!message.member.hasPermission("ADMINISTRATOR")){
               return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
             }      
-            message.guild.members.fetch()
             let rolemap = message.guild.roles.cache
             .sort((a, b) => b.position - a.position)
             .map(r => r)

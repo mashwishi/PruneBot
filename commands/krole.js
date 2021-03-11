@@ -24,9 +24,6 @@ module.exports.run = async (bot, message, args) => {
             else if (!id.startsWith('<@&') && id.endsWith('>')) {
               return message.channel.send(` ${message.author}, You didn't mention a role!`);
             }
-            //[view the id before deleting] message.channel.send(`Role ID: `+ mentionedrole);
-                //gather the latest data first
-                message.guild.members.fetch()
                 //count members will be kicked
                 var memberscount = message.guild.roles.cache.get(mentionedrole).members.size;
                 message.reply('The bot will kick ('+ memberscount +') users from ' + `<@&`+mentionedrole+`>` + ' role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')    

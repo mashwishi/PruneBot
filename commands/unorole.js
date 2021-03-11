@@ -12,8 +12,6 @@ module.exports.run = async (bot, message, args) => {
             if(!message.member.hasPermission("ADMINISTRATOR")){
               return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
             }  
-              //gather latest data
-              message.guild.members.fetch()
                 
               var memberscount = message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).size;
         
