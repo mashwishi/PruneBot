@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
           { name: config.prefix +'help', value: 'To show all of the available bot commands.\nCommand Cooldown: 10 seconds' },
           { name: config.prefix +'fetch', value: 'To fetch/update all the data cache. \nCommand Cooldown: 24 hours' },
           { name: config.prefix +'krole <role>', value: 'Kick all the users to the specific role. \nCommand Cooldown: 6 hours' },
-          { name: config.prefix +'urole <role>', value: 'List all the users with the mentioned role. \nCommand Cooldown: 6 hours' },       
+          { name: config.prefix +'urole <role>', value: 'List all the users with the mentioned role. \nCommand Cooldown: 30 seconds' },       
           { name: config.prefix +'knorole', value: 'Kick all the users without role. \nCommand Cooldown: 6 hours' },
           { name: config.prefix +'unorole', value: 'List all the users without role. \nCommand Cooldown: 30 seconds' },          
           { name: config.prefix +'roles', value: 'List and count all the roles in the server. \nCommand Cooldown: 5 seconds' },
