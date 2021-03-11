@@ -16,11 +16,8 @@
  [![Issues][issues-shield]][issues-url]
  [![MIT License][license-shield]][license-url]
  <br>
- <h4>Warning: This bot is currently under development,<br>
-We will be adding 'Required Permission' on the next update.</a></h4>
 
   <strong><a href="http://bit.ly/PruneBot">INVITE ME TO YOUR SERVER</a></strong>
-  <h6>Be careful, I'm currently on beta!</h6>
 
 
 </div>
@@ -38,7 +35,7 @@ PruneBot is a free and open source solution to your server and user managing pro
 
 <h2 align="center">Commands</h2>
 
-<h5>Current Commands | Version 1.1.0</h5>
+<h5>Current Commands | Version 1.9.0</h5>
 <p>Note: You must have Administrator Permission to use this commands.</p>
 
 Command|Description
@@ -53,7 +50,7 @@ Command|Description
 **`!roleid <role>`**|Print the Role ID of the specific role.
 **`!shutdown`**|Shutdown the discord bot.
 
-<h5>Coming Soon | Version 1.5.0</h5>
+<h5>Coming Soon | Version 2.0.0</h5>
 
 Command|Description
 -|-
