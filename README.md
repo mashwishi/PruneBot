@@ -93,7 +93,7 @@ This is how you will set-up your self-hosted Prune Bot.
    
 ---
 
-[support-invite]: https://discord.gg/qpkRST8MMb
+[support-invite]: https://discord.gg/WAh8eaF2Qq
 [support-image]: https://discordapp.com/api/guilds/815657126705889320/widget.png?style=banner2
 
 [donate-link]: https://www.paypal.me/NCMC
