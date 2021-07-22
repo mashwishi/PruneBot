@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
             }
                 //count members will be kicked
                 var memberscount = message.guild.roles.cache.get(mentionedrole).members.size;
-                message.reply('The bot will kick ('+ memberscount +') users from ' + `<@&`+mentionedrole+`>` + ' role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')    
+                message.reply('The bot will kick ('+ memberscount +') users from ' + `<@&`+mentionedrole+`>` + ' role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')                    
                 message.react('👍').then(r => {
                 message.react('👎');
                   });
@@ -40,16 +40,19 @@ module.exports.run = async (bot, message, args) => {
                                 m.kick()
                                 .catch(console.error);
                               });
+                              message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                       }
                       else
                               message.reply('Operation canceled.');
+                              message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                   }).catch(() => {
                       message.reply('No reaction after 30 seconds, operation canceled');
+                      message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                   });
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 21600000); 
+        }, 5000); 
     }
 }
 

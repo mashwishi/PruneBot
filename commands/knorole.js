@@ -19,7 +19,17 @@ module.exports.run = async (bot, message, args) => {
                 message.reply('Looks like everyone has a role already.') 
               }
               else{
-              message.reply('The bot will kick ('+ memberscount +') users without a role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')    
+
+                const ListEmbed = new Discord.MessageEmbed() 
+                .setTitle(`Prune Bot | Users`)
+                .setDescription(`The bot will kick (`+ memberscount +`) users without a role.`)
+                .setColor('#b491c8')
+                .addFields(
+                 { name: 'Users:', value: message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n') },)
+                .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
+                message.channel.send(ListEmbed);   
+              
+              //message.reply('The bot will kick ('+ memberscount +') users without a role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')    
                 message.react('👍').then(r => {
                 message.react('👎');
                 });
@@ -33,18 +43,21 @@ module.exports.run = async (bot, message, args) => {
                               .catch(console.error);
                             });               
                             message.reply('Done! ('+ memberscount +') users without roles has been kicked.'); 
+                            message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                     }
                     else
                             message.reply('Operation canceled.');
+                            message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                 }).catch(() => {
                     message.reply('No reaction after 30 seconds, operation canceled');
+                    message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
                 });
               }
         }
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 21600000); //You can set the ammount of the cooldown here! Its Formated to Miliseconds.
+        }, 5000); //You can set the ammount of the cooldown here! Its Formated to Miliseconds 5000 = 5secs.
     }
 }
 
