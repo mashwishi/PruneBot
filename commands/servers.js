@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
             if(message.author.id !== config.ownerID){
             return message.reply("Your not the Bot Owner to do that!");
             }          
-            message.reply(`Your bot is in **${client.guilds.cache.size}** server(s).`)   
+            message.reply(`Your bot is in **${bot.guilds.cache.size}** server(s).`)   
           }
         usedCommand.add(message.author.id);
         setTimeout(() => {
