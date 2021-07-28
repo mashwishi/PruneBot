@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
                   .setColor('#b491c8')
                   .addFields(
                     { name: 'Users:', value: message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') },)
-                  .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
+                  .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
                 message.channel.send(ListEmbed);    
           }
         usedCommand.add(message.author.id);

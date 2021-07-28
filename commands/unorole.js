@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor('#b491c8')
                 .addFields(
                  { name: 'Users:', value: message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n') },)
-                .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/qB9jJZ3.png');
+                .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
               message.channel.send(ListEmbed);   
                 } 
         }
