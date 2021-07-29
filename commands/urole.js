@@ -38,8 +38,8 @@ module.exports.run = async (bot, message, args) => {
                   //  { name: 'Users:', value: message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') },)
                  // .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
                  
-                message.channel.send(`Users that has ${therole} role.`);    
-                message.channel.send(message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') );  
+               // message.channel.send(`Users that has ${therole} role.`);    
+                message.channel.send(message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n'));  
           }
         usedCommand.add(message.author.id);
         setTimeout(() => {
