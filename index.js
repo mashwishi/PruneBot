@@ -1,50 +1,50 @@
 require ('dotenv').config()
 const Discord = require('discord.js');
-const config = process.env;
+const { readdirSync } = require("fs");
+const handleEvents = require("./events");
 
+const config = process.env;
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("guildMemberAdd", member => {
-    //const welcomeChannel = member.guild.channels.cache.find(channel => channel.name === 'welcome')
-    //welcomeChannel.send (`Welcome! ${member}`)
-})
+handleEvents(bot);
 
-require("./util/eventHandler")(bot)
-
-const fs = require("fs");
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
-fs.readdir("./commands/", (err, files) => {
-
-    if(err) console.log(err)
-
-    let jsfile = files.filter(f => f.split(".").pop() === "js") 
-    if(jsfile.length <= 0) {
-         return console.log("[LOGS] Couldn't Find Commands!");
+try
+{
+    let files = readdirSync("./commands/");
+    let jsfiles = files.filter(f => f.split(".").pop() === "js")
+    if(jsfiles.length <= 0) {
+        return console.log("[LOGS] Couldn't Find Commands!");
     }
 
-    jsfile.forEach((f, i) => {
+    jsfiles.forEach(f => {
         let pull = require(`./commands/${f}`);
-        bot.commands.set(pull.config.name, pull);  
+        bot.commands.set(pull.config.name, pull);
         pull.config.aliases.forEach(alias => {
             bot.aliases.set(alias, pull.config.name)
         });
     });
-});
 
-bot.on("message", async message => {
-    if(message.author.bot || message.channel.type === "dm") return;
+    bot.on("message", message => {
+        if(message.author.bot || message.channel.type === "dm") return;
 
-    let prefix = config.prefix;
-    let messageArray = message.content.split(" ");
-    let cmd = messageArray[0];
-    let args = message.content.substring(message.content.indexOf(' ')+1);
+        let { content } = message;
+        let { prefix } = config;
+        if(!content.startsWith(prefix)) return;
 
-    if(!message.content.startsWith(prefix)) return;
-    let commandfile = bot.commands.get(cmd.slice(prefix.length)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.length)))
-    if(commandfile) commandfile.run(bot,message,args)
+        let [ cmd, args ] = content.split(/\s(.+)/);
+        cmd = cmd.slice(prefix.length);
 
-})
+        let commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
+        if(commandfile) commandfile.run(bot, message, args)
+    })
 
-bot.login(process.env.token);
+    bot.login(process.env.TOKEN);
+}
+catch(error)
+{
+    console.log("Cannot load command files");
+    console.log(error);
+}
