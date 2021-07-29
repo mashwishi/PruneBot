@@ -29,6 +29,7 @@ module.exports.run = async (bot, message, args) => {
                 .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
                 message.channel.send(ListEmbed);   
               
+               // message.channel.send(ListEmbed);                
                 message.reply('The bot will kick ('+ memberscount +') users without a role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')    
                 message.react('👍').then(r => {
                 message.react('👎');
