@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         message.reply("You cannot use " + config.prefix + "roleid command beacuse of the cooldown.")
     } else {
         if (message.content.toLowerCase().startsWith(config.prefix + "roleid")) {
-            //check if no perm
+          
             if(!message.member.hasPermission("ADMINISTRATOR")){
               return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
             }  
@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 5000); //You can set the ammount of the cooldown here! Its Formated to Miliseconds.
+        }, 5000); 
     }
 }
 

@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         message.reply("You cannot use " + config.prefix + "fetch command beacuse of the cooldown.")
     } else {
         if (message.content.toLowerCase().startsWith(config.prefix + "fetch")) {  
-            //check if no perm
+        
             if(!message.member.hasPermission("ADMINISTRATOR")){
               return message.reply("You don't have `ADMINISTRATOR` permission to do that!");
             }    
@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 300000); //You can set the ammount of the cooldown here! Its Formated to Miliseconds 300000 = 5mins.
+        }, 300000); 
     }
 }
 

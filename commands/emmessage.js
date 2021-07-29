@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         message.reply("You cannot use " + config.prefix + "emmessage command beacuse of the cooldown.")
     } else {
         if (message.content.toLowerCase().startsWith(config.prefix + "emmessage")) {
-            //check if no perm
+
             if(message.author.id !== config.ownerid){
             return message.reply("You're not my developer to do that!");
             }      
@@ -17,7 +17,6 @@ module.exports.run = async (bot, message, args) => {
             const contentmsg = contentmsga.substr(9);
             var Attachment = (message.attachments);
 
-            //check if there's attachment
             if(message.attachments.size > 0){
                 const MEAEmbed = new Discord.MessageEmbed() 
                 .setColor('#b491c8')
@@ -35,8 +34,7 @@ module.exports.run = async (bot, message, args) => {
                             
                 return bot.guilds.cache.array().forEach(guild => guild.owner.send(MEAEmbed));
             }  
-
-            //this will run if no attachment            
+       
             const MEEmbed = new Discord.MessageEmbed() 
             .setColor('#b491c8')
             .setTitle('Prune Bot | Announcement')
@@ -55,7 +53,7 @@ module.exports.run = async (bot, message, args) => {
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 5000); //You can set the ammount of the cooldown here! Its Formated to Miliseconds.
+        }, 5000); 
     }
 }
 
