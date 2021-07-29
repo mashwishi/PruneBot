@@ -61,8 +61,10 @@ module.exports.run = async (bot, message, args) => {
               { name: config.prefix +'servers', value: 'Check how many servers using this bot. \nCommand Cooldown: 5 seconds' },
 
               { name: 'Important Note:', value: 'User must have Administrator Permission to be able to use this, You MUST "fetch" the data first to get the latest or updated data to this server to be able to kick or list the latest users and roles.' },   
+              { name: 'Problem with Cooldowns?', value: 'To avoid being rate-limited and banned, I decided to set this time to prevent it some how and If you are not happy with it use the source code and modify it.' },                 
+              
               { name: 'Github (Source Code)', value: 'https://github.com/mashwishi/PruneBot' },
-              { name: 'Support the Developer:', value: 'https://ko-fi.com/mashwishi' }   
+              { name: 'Support the Developer:', value: 'https://ko-fi.com/mashwishi' }  
             )
             .setTimestamp()
             .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');            
