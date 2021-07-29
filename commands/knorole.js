@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
                       await listMsg.react("👎");
                     const filter = (reaction, user) => ["◀️", "▶️", "👍","👎"].includes(reaction.emoji.name) && user.id === message.author.id;
                     const collector = listMsg.createReactionCollector(filter, {
-                        time: 120000
+                        time: 900000 //15 minutes
                     });
                     collector.on('collect', (reaction, user) => {
                         reaction.emoji.reaction.users.remove(user.id);
@@ -136,7 +136,7 @@ module.exports.run = async (bot, message, args) => {
         usedCommand.add(message.author.id);
         setTimeout(() => {
             usedCommand.delete(message.author.id);
-        }, 5000); 
+        }, 1800000); //30 minutes
     }
 }
 

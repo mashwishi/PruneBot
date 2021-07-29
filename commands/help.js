@@ -15,18 +15,20 @@ module.exports.run = async (bot, message, args) => {
             .setDescription('')
             .setThumbnail('https://i.imgur.com/ypxq7B9.png')
             .addFields(
-              { name: config.prefix +'help', value: 'To show all of the available bot commands.\nCommand Cooldown: 3 seconds' },
-              { name: config.prefix +'fetch', value: 'To fetch/update all the data cache. \nCommand Cooldown: 5 Minutes' },
+              { name: config.prefix +'help', value: 'To show all of the available bot commands.\nCommand Cooldown: 3 second(s)' },
+              { name: config.prefix +'fetch', value: 'To fetch/update all the data cache. \nCommand Cooldown: 1 Hour(s)' },
     
-              { name: config.prefix +'krole <role>', value: 'Kick all the users to the specific role. \nCommand Cooldown: 5 seconds' },
-              { name: config.prefix +'urole <role>', value: 'List all the users with the mentioned role. \nCommand Cooldown: 5 seconds' }, 
+              { name: config.prefix +'krole <role>', value: 'Kick all the users to the specific role. \nCommand Cooldown: 30 Minute(s)' },
+              { name: config.prefix +'urole <role>', value: 'List all the users with the mentioned role. \nCommand Cooldown:  15 Minute(s)' }, 
     
-              { name: config.prefix +'knorole', value: 'Kick all the users without role. \nCommand Cooldown: 5 seconds' },
-              { name: config.prefix +'unorole', value: 'List all the users without role. \nCommand Cooldown: 5 seconds' },          
+              { name: config.prefix +'knorole', value: 'Kick all the users without role. \nCommand Cooldown: 30 Minute(s)' },
+              { name: config.prefix +'unorole', value: 'List all the users without role. \nCommand Cooldown: 15 Minute(s)' },   
+
               { name: config.prefix +'roles', value: 'List and count all the roles in the server. \nCommand Cooldown: 5 seconds' },
               { name: config.prefix +'roleid <role>', value: 'Print the Role ID of the specific role. \nCommand Cooldown: 5 seconds' }, 
     
               { name: 'Important Note:', value: 'User must have Administrator Permission to be able to use this, You MUST "fetch" the data first to get the latest or updated data to this server to be able to kick or list the latest users and roles.' },   
+              { name: 'Problem with Cooldowns?', value: 'To avoid being rate-limited and banned, I decided to set this time to prevent it some how and If you are not happy with it use the source code and modify it.' },   
               { name: 'Support the Developer:', value: 'https://ko-fi.com/mashwishi' }   
             )
             .setTimestamp()
