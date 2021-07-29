@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/>
-  <h1>Prune Bot </h1>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot"><img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/></a>
+  <h1><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot">Prune Bot </a></h1>
 
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
@@ -17,16 +17,15 @@
  [![MIT License][license-shield]][license-url]
  <br>
 
-  <strong><a href="http://bit.ly/PruneBot">INVITE ME TO YOUR SERVER</a></strong>
-
-
 </div>
 
 ---
 
 <h2 align="center">What is this bot?</h2>
 
-PruneBot is a free and open source solution to your server and user managing problems, built from scratch with code organization and quality in mind. Our goal is to cover as many functionalities as possible.
+<strong><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot">PruneBot</a></strong> is a free and open source solution to your server and user managing problems, built from scratch with code organization and quality in mind. Our goal is to cover as many functionalities as possible.
+
+<strong><a href="https://bit.ly/PruneBot-Beta">PruneBot (Development)</a></strong> is created for beta testing of the latest updates of PruneBot. This is also limited to 100 servers, This bot is not that stable and may contain bugs. There will be no support given to this version
 
 <h3>Table of Contents</h3>
 
