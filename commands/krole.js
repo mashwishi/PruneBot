@@ -25,7 +25,7 @@ module.exports.run = async (bot, message, args) => {
               return message.channel.send(` ${message.author}, You didn't mention a role!`);
             }
                 //count members will be kicked
-                var memberscount = message.guild.roles.cache.get(mentionedrole).members.size;
+                var memberscount = message.guild.roles.cache.get(mentionedrole).members.size; 
                 message.reply('The bot will kick ('+ memberscount +') users from ' + `<@&`+mentionedrole+`>` + ' role.\n'+ 'Confirm with a thumb up or deny with a thumb down.')                    
                 message.react('👍').then(r => {
                 message.react('👎');

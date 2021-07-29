@@ -29,15 +29,17 @@ module.exports.run = async (bot, message, args) => {
             //[view the id before deleting] message.channel.send(`Role ID: `+ mentionedrole);
                 
                 //display the gathered data of users
-                const therole = message.guild.roles.cache.find(role => role.id == mentionedrole);
-                  const ListEmbed = new Discord.MessageEmbed() 
-                  .setTitle(`Prune Bot | Users`)
-                  .setDescription(`Users that has ${therole} role.`)
-                  .setColor('#b491c8')
-                  .addFields(
-                    { name: 'Users:', value: message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') },)
-                  .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
-                message.channel.send(ListEmbed);    
+               // const therole = message.guild.roles.cache.find(role => role.id == mentionedrole);
+                //  const ListEmbed = new Discord.MessageEmbed() 
+                 // .setTitle(`Prune Bot | Users`)
+                 // .setDescription(`Users that has ${therole} role.`)
+                 // .setColor('#b491c8')
+                  //.addFields(
+                  //  { name: 'Users:', value: message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') },)
+                 // .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
+                 
+                message.channel.send(`Users that has ${therole} role.`);    
+                message.channel.send(message.guild.roles.cache.get(mentionedrole).members.map(m=>m.user.tag).join('\n') );  
           }
         usedCommand.add(message.author.id);
         setTimeout(() => {

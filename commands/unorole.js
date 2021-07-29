@@ -20,13 +20,16 @@ module.exports.run = async (bot, message, args) => {
                 }
                 else{  
                 const ListEmbed = new Discord.MessageEmbed() 
-                .setTitle(`Prune Bot | Users`)
-                .setDescription(`Users that has no role.`)
-                .setColor('#b491c8')
-                .addFields(
-                 { name: 'Users:', value: message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n') },)
-                .setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
-              message.channel.send(ListEmbed);   
+               // .setTitle(`Prune Bot | Users`)
+               // .setDescription(`Users that has no role.`)
+               // .setColor('#b491c8')
+               // .addFields(
+                // { name: 'Users:', value: message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n') },)
+                //.setFooter('PruneBot is created by Mashwishi', 'https://i.imgur.com/DxWDaGv.png');
+             // message.channel.send(ListEmbed);  
+             message.channel.send(`Users that has no role.`);    
+             message.channel.send(message.guild.members.cache.filter(member => member.roles.cache.array().length < 2).map(member => member.user.tag).join('\n'))
+              
                 } 
         }
         usedCommand.add(message.author.id);
