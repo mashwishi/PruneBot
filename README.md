@@ -9,9 +9,31 @@
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to our contributors and helper <a href="https://github.com/esfox">esfox</a>, <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
  
-  [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B14A4MU)
+<!-- [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B14A4MU) -->
+<!-- <a href="https://discordbotlist.com/bots/814580247973986314"><img src="https://discordbotlist.com/api/v1/bots/814580247973986314/widget"></a> -->
+<!-- [![support][support-image]][support-invite]-->
 
-  [![support][support-image]][support-invite]
+<p align="center">
+<table align="center">
+   <tr>
+      <td>
+         <p align="center">
+            <a href="https://ko-fi.com/mashwishi"> <img align="center" src="https://ko-fi.com/img/githubbutton_sm.svg" /></a>
+          <br/><br/>
+            <a href="https://discord.gg/WAh8eaF2Qq"><img align="center" src="https://discordapp.com/api/guilds/779997243159216149/widget.png?style=banner2" alt="Discord Banner 2"/>    </a>
+         </p>
+      </td>
+      <td>
+         <p align="center">
+            <br/>
+            <a href="https://discordlist.space/bot/814580247973986314"><img src="https://api.discordlist.space/v2/bots/814580247973986314/widget?background=202225&radius=5"></a>
+         </p>
+      </td>
+   </tr>
+</table>
+</p>
+
+
   
  [![Contributors][contributors-shield]][contributors-url]
  [![Forks][forks-shield]][forks-url]
