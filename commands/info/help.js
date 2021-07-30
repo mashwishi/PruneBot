@@ -42,10 +42,6 @@ module.exports.run = async (client, message, args) => {
 				"**:partying_face: Fun**",
 				"`8ball`, `cat`, `deaes256`, `kiss`, `meme`, `ngif`, `pat`, `poke`, `smug`, `thigh`, `tickle`"
 			)			
-			.addField(
-				"**:underage: NSFW**",
-				"`4knsfw`, `anal`, `ass`, `hentai`, `holo`, `pussy`, `porn`, `urban`"
-			)
             .addFields(
 				{ name: ':desktop: Github (Source Code)', value: 'https://github.com/mashwishi/PruneBot' },
 				{ name: ':revolving_hearts: Support the Developer:', value: 'https://ko-fi.com/mashwishi' }   
