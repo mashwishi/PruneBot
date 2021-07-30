@@ -1,25 +1,25 @@
 {
-	"name": "PruneBot",
+	"name": "Prune Bot",
 	"version": "1.0.0",
 	"main": "shard.js",
-	"description": "Discord-Multi-Purpose Bot",
+	"description": "A free open source solution to your server and user managing problems, built from scratch with code organization and quality in mind. Our goal is to cover as many functionalities as possible.",
 	"author": "Mashwishi",
 	"scripts": {
 		"start": "node shard.js",
 		"code-format": "npx prettier --write . && exit 0"
 	},
 	"email": "mashwishiii@gmail.com",
-	"url": "https://PruneBot.Mashwishi.tk/",
+	"url": "https://github.com/mashwishi/PruneBot",
 	"engines": {
 		"node": ">=14.0.0"
 	},
 	"repository": {
-		"url": "git+https://github.com/Mashwishi/PruneBot.git"
+		"url": "git+https://github.com/mashwishi/PruneBot.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Mashwishi/PruneBot/issues"
+		"url": "https://github.com/mashwishi/PruneBot/issues"
 	},
-	"homepage": "https://github.com/Mashwishi/PruneBot#readme",
+	"homepage": "https://github.com/mashwishi/PruneBot#readme",
 	"keywords": [],
 	"license": "MIT",
 	"dependencies": {
