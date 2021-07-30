@@ -1,3 +1,4 @@
+
 # Logs
 logs
 *.log
@@ -107,3 +108,8 @@ botsettings.json
 
 node_modules/
 Procfile
+data/
+json.sqlite
+package-lock.json
+
+
