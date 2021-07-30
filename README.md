@@ -118,6 +118,8 @@ This is how you will set-up your self-hosted Prune Bot.
 5. Start the bot from the project folder: `node shard.js`
 6. Open `http://localhost:8080/` or your project URL to view the http output.
 
+---
+
 [support-invite]: https://discord.gg/WAh8eaF2Qq
 [support-image]: https://discordapp.com/api/guilds/779997243159216149/widget.png?style=banner2
 
