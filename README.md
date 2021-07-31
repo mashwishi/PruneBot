@@ -5,6 +5,7 @@
   <h3>Version 2.0.0</h3>
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
+  <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/6nnE82j6qu">Join now!</a></h4>
   
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to our contributors and helper <a href="https://github.com/esfox">esfox</a>, <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
@@ -68,9 +69,6 @@
 - ⚠ | Embed links needed for bot embed messages
 - ⚠ | Admin Permission needed for Moderation commands
 
-
----
-
 <h2 align="center">Commands</h2>
 
 ### Featured Commands:
@@ -87,23 +85,30 @@ We have more than 80 commands in this bot, and they are **featured** and having 
 - :stars: **Images:** `cat`, `changemymind`, `gay`, `trigger`, `circle`, and **7 more!**
 - :soccer: **Fun:** `8ball`, `reverse`, `snipe`, and **4 more!**
 
-
-## Issue/Suggestions
-
-If met any issues, go [here](https://github.com/Mashwishi/PruneBot/issues) to report bug and create new issue for supporting
-
-## Github Repository
-
-PruneBot Made by Mashwishi, project [Here](https://github.com/Mashwishi/PruneBot)
+<h2 align="center">More PruneBot(s)</h2>
+<div align="center">
+  <p>
+  PruneBot Main is the verified bot at the mmoment, If you're encountering issues with the main bot due to a lot of users feel free to use other versions of PruneBot there are 3 alternative PruneBot(s) the Blue, Green and Red this bot is currently not verified and can only handle up to 75+ Discord servers. If you can no longer use any of this alternative bots to your server due to limited invite please kindly contact me to our <a href="https://discod.io/LMYAW">Discord Server</a>.
+  </p>
+  <a href="https://bit.ly/PruneBotMain"><img alt="PruneBot Main"  src="https://i.imgur.com/OEVbYKw.png" width="15%" ></a>
+  <a href="https://bit.ly/PruneBotGreen"><img alt="PruneBot Green"  src="https://i.imgur.com/qWadO8f.png" width="15%" ></a>
+  <a href="https://bit.ly/PruneBotRed"><img alt="PruneBot Red"  src="https://i.imgur.com/ulh0MIU.png" width="15%" ></a>
+  <a href="https://bit.ly/PruneBotBlue"><img alt="PruneBot Blue"  src="https://i.imgur.com/C4YuJBU.png" width="15%" ></a>
+</div>
 
 <h2 align="center">Self-Hosting & Development</h2>
+
+<div align="center">
+  <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting"  src="https://i.imgur.com/MLSVDuP.png"></a>
+</div>
 
 **We ask you to please not host your own instance of PruneBot.** Even though our license allows it, self-hosted instances of the bot have brought us a lot of headache in the past. If you're considering self-hosting, please [try the official instance of the bot first](https://github.com/mashwishi/PruneBot/#). If you have any concerns about the security of our instance, please contact us. We'd love to talk and answer any questions you have.
 
 > If you're really really really going to self-host the bot, please [read our license](https://github.com/mashwishi/PruneBot/blob/master/LICENSE) first, and be aware that we don't provide any self-hosting support. **You'll be on your own.**
 
-## Getting Started
 
+## Getting Started
+  <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/6nnE82j6qu">Join now!</a></h4>
 This is how you will set-up your self-hosted Prune Bot.
 
 
@@ -140,7 +145,19 @@ This is how you will set-up your self-hosted Prune Bot.
 5. Start the bot from the project folder: `node shard.js`
 6. Open `http://localhost:8080/` or your project URL to view the http output.
 
+## Issue/Suggestions
+
+If met any issues, go [here](https://github.com/Mashwishi/PruneBot/issues) to report bug and create new issue for supporting
+
+## Github Repository
+
+PruneBot Made by Mashwishi, project [Here](https://github.com/Mashwishi/PruneBot)
+
 ---
+
+<div align="center">
+  <a href="https://billing.pebblehost.com/aff.php?aff=1764"><img alt="PebbleHosting - Discord Bot Hosting" src="https://pebblehost.com/src/img/branding/banner1.gif"></a>
+</div>
 
 [support-invite]: https://discord.gg/WAh8eaF2Qq
 [support-image]: https://discordapp.com/api/guilds/779997243159216149/widget.png?style=banner2
