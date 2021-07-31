@@ -88,7 +88,7 @@ We have more than 80 commands in this bot, and they are **featured** and having 
 <h2 align="center">More PruneBot(s)</h2>
 <div align="center">
   <p>
-  PruneBot Main is the verified bot at the mmoment, If you're encountering issues with the main bot due to a lot of users feel free to use other versions of PruneBot there are 3 alternative PruneBot(s) the Blue, Green and Red this bot is currently not verified and can only handle up to 75+ Discord servers. If you can no longer use any of this alternative bots to your server due to limited invite please kindly contact me to our <a href="https://discod.io/LMYAW">Discord Server</a>.
+  PruneBot Main is the only verified bot at the moment, If you're encountering issues with the main bot due to a lot of users feel free to use other versions of PruneBot there are 3 alternative PruneBot(s) the Blue, Green and Red this bot is currently not verified and can only handle up to 75+ Discord servers. If you can no longer use any of this alternative bots to your server due to limited invite please kindly contact me to our <a href="https://discod.io/LMYAW">Discord Server</a>.
   </p>
   <a href="https://bit.ly/PruneBotMain"><img alt="PruneBot Main"  src="https://i.imgur.com/OEVbYKw.png" width="15%" ></a>
   <a href="https://bit.ly/PruneBotGreen"><img alt="PruneBot Green"  src="https://i.imgur.com/qWadO8f.png" width="15%" ></a>
