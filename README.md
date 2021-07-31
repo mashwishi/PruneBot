@@ -33,8 +33,6 @@
    </tr>
 </table>
 </p>
-
-
   
  [![Contributors][contributors-shield]][contributors-url]
  [![Forks][forks-shield]][forks-url]
