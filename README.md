@@ -51,6 +51,10 @@
 
 <strong><a href="https://discord.com/api/oauth2/authorize?client_id=816474139560378379&permissions=8&scope=bot">PruneBot (Development)</a></strong> is created for beta testing of the latest updates of PruneBot. This is also limited to 100 servers, This bot is not that stable and may contain bugs. There will be no support given to this version
 
+<div align="center">
+  <a href="https://discord.io/LIMYAW"><img src="https://i.imgur.com/N3UeQjC.jpg" width="100%"/></a>
+</div>
+
 ---
 
 ### Bot Features:
