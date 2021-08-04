@@ -111,7 +111,7 @@ We have more than 80 commands in this bot, and they are **featured** and having 
 
 
 ## Getting Started
-  <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/6nnE82j6qu">Join now!</a></h4>
+  <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/j3Mx7cHgXF">Join now!</a></h4>
 This is how you will set-up your self-hosted Prune Bot.
 
 
