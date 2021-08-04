@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot"><img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/></a>
-  <h1><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=259845516535&scope=bot">Prune Bot </a></h1>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands"><img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/></a>
+  <h1><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands">Prune Bot </a></h1>
 
   <h3>Version 2.0.0</h3>
 
@@ -92,10 +92,10 @@ We have more than 80 commands in this bot, and they are **featured** and having 
   <p>
   PruneBot Main is the only verified bot at the moment, If you're encountering issues with the main bot due to a lot of users feel free to use other versions of PruneBot there are 3 alternative PruneBot(s) the Blue, Green and Red this bot is currently not verified and can only handle up to 75+ Discord servers. If you can no longer use any of this alternative bots to your server due to limited invite please kindly contact me to our <a href="https://discod.io/LMYAW">Discord Server</a>.
   </p>
-  <a href="https://bit.ly/PruneBotMain"><img alt="PruneBot Main"  src="https://i.imgur.com/OEVbYKw.png" width="15%" ></a>
-  <a href="https://bit.ly/PruneBotGreen"><img alt="PruneBot Green"  src="https://i.imgur.com/qWadO8f.png" width="15%" ></a>
-  <a href="https://bit.ly/PruneBotRed"><img alt="PruneBot Red"  src="https://i.imgur.com/ulh0MIU.png" width="15%" ></a>
-  <a href="https://bit.ly/PruneBotBlue"><img alt="PruneBot Blue"  src="https://i.imgur.com/C4YuJBU.png" width="15%" ></a>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands"><img alt="PruneBot Main"  src="https://i.imgur.com/OEVbYKw.png" width="15%" ></a>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=869637540896989234&permissions=8&scope=bot%20applications.commands"><img alt="PruneBot Green"  src="https://i.imgur.com/qWadO8f.png" width="15%" ></a>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=816474139560378379&permissions=8&scope=bot%20applications.commands"><img alt="PruneBot Red"  src="https://i.imgur.com/ulh0MIU.png" width="15%" ></a>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=815785457672650802&permissions=8&scope=bot%20applications.commands"><img alt="PruneBot Blue"  src="https://i.imgur.com/C4YuJBU.png" width="15%" ></a>
 </div>
 
 <h2 align="center">Self-Hosting & Development</h2>
