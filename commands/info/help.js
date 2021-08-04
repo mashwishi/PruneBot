@@ -98,5 +98,6 @@ module.exports.help = {
 	description: "This command is used for displaying all commands.",
 	usage: "p!help",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 120
 };
