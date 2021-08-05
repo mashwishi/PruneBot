@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
 		)
 		.setColor("RED");
 	const dfgrdgdfgdf = new Discord.MessageEmbed()
-		.setDescription(`${emojis.tick} Unlocked this channel`)
+		.setDescription(`:bulb: Unlocked this channel`)
 		.setColor("GREEN");
 
 	if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) {
@@ -46,5 +46,6 @@ module.exports.help = {
 	description: "This command is used for unlockchanneling",
 	usage: "p!unlockchannel",
 	accessableby: "Manage Channels",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

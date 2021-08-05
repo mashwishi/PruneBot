@@ -1,4 +1,5 @@
 const fs = require("fs");
+const settings = require("../../config/settings.json");
 
 module.exports = async client => {
 	console.log("Ready!");
@@ -34,7 +35,7 @@ module.exports = async client => {
 	setInterval(
 		() =>
 			client.user.setActivity(
-				`p!help | ${activities[i++ % activities.length]}`,
+				`${settings.prefix} | ${activities[i++ % activities.length]}`,
 				{ type: "WATCHING" }
 			),
 		15000

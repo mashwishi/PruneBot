@@ -29,5 +29,6 @@ module.exports.help = {
 	description: "This command is used for kiss someone u loVe.",
 	usage: "p!kiss <mentions>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

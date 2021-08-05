@@ -14,5 +14,6 @@ module.exports.help = {
 	description: "This command is used for resuming music.",
 	usage: "p!resume",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

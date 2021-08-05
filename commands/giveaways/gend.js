@@ -63,5 +63,6 @@ module.exports.help = {
 	description: "This command is used for endding the currents giveaway section",
 	usage: "p!gend <giveaway-message-id>",
 	accessableby: "Manage Messages",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

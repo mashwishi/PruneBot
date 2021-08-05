@@ -26,5 +26,6 @@ module.exports.help = {
 	description: "Changemymind please.",
 	usage: "p!changemymind <text>(optional)",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

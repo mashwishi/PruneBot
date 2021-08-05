@@ -4,7 +4,7 @@ const config = require("../../config/config.json");
 module.exports.run = async (client, message, args) => {
 	const embed2 = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Missing user ID or User not found in this server!`
+			`:bulb: Missing user ID or User not found in this server!`
 		)
 		.setColor("RED");
 
@@ -18,12 +18,12 @@ module.exports.run = async (client, message, args) => {
 
 	const embed1 = new Discord.MessageEmbed()
 		.setTitle("Error")
-		.setDescription(`${emojis.tick} The user you entered has not been banned!`)
+		.setDescription(`:bulb: The user you entered has not been banned!`)
 		.setColor("RED");
 
 	const mmqembed = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} ${message.author.username}, Missing Permission`
+			`:bulb: ${message.author.username}, Missing Permission`
 		)
 		.setColor("#FFFF00");
 	if (!message.member.hasPermission("BAN_MEMBERS")) {
@@ -38,7 +38,7 @@ module.exports.run = async (client, message, args) => {
 		client.users.cache.get(args[0]).discriminator
 	}`;
 	const EMDDD = new Discord.MessageEmbed()
-		.setDescription(`${emojis.tick} Unbanned **${username}**`)
+		.setDescription(`:bulb: Unbanned **${username}**`)
 		.setColor("GREEN");
 	return message.guild.members.unban(member).then(message.channel.send(EMDDD));
 };
@@ -48,5 +48,6 @@ module.exports.help = {
 	description: "This command is used for unbanning someone",
 	usage: "p!unban <USER ID>",
 	accessableby: "Ban Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

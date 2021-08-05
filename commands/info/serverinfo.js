@@ -71,5 +71,6 @@ module.exports.help = {
 	description: "This command is used for checking the server info.",
 	usage: "p!serverinfo",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 180
 };

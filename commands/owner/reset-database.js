@@ -33,5 +33,6 @@ module.exports.help = {
 	description: "This command is used for resetting data.",
 	usage: "p!reset-data",
 	accessableby: "Bot Owners/Database Manager",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -51,5 +51,6 @@ module.exports.help = {
 	description: "This command is used for generating trigger image",
 	usage: "p!trigger <mention or attachment>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

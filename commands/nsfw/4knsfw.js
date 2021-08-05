@@ -27,5 +27,6 @@ module.exports.help = {
 	description: "This command is used for generating some 4knsfw images.",
 	usage: "p!4knsfw",
 	accessableby: "NSFW/Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

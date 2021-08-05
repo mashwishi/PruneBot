@@ -31,5 +31,6 @@ module.exports.help = {
 	description: "This command is used for lopping the songs in music system.",
 	usage: "p!loop <off/song/queue>",
 	accessableby: "Connecting to Voice channel",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

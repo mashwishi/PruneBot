@@ -45,5 +45,6 @@ module.exports.help = {
 	description: "Check the people you mentioned who has warnings or not",
 	usage: "p!warnings <mention>",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

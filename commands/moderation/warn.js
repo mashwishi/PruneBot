@@ -88,12 +88,12 @@ module.exports.run = async (client, message, args) => {
 
 	const test1 = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Muted **${user.username}#${user.discriminator}** For 1 Hour | **Reached Two Warnings**`
+			`:bulb: Muted **${user.username}#${user.discriminator}** For 1 Hour | **Reached Two Warnings**`
 		)
 		.setColor("GREEN");
 	const bsuembed = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Warned **${user.username}#${user.discriminator}** | **${reason}**`
+			`:bulb: Warned **${user.username}#${user.discriminator}** | **${reason}**`
 		)
 		.setColor("GREEN");
 
@@ -110,13 +110,13 @@ module.exports.run = async (client, message, args) => {
 
 	const test2 = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Kicked **${user.username}#${user.discriminator}** | **Reached Warnings 3**`
+			`:bulb: Kicked **${user.username}#${user.discriminator}** | **Reached Warnings 3**`
 		)
 		.setColor("GREEN");
 
 	const test3 = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Banned **${user.username}#${user.discriminator}** | **Reached 5 Warnings**`
+			`:bulb: Banned **${user.username}#${user.discriminator}** | **Reached 5 Warnings**`
 		)
 		.setColor("GREEN");
 
@@ -151,5 +151,6 @@ module.exports.help = {
 		"Warn someone u hates/againsting rules, 2 warn for muting, 3 warns for kicking, 5 warns for banning",
 	usage: "p!warn <mention> <reason>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

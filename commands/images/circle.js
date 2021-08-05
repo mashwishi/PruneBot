@@ -52,5 +52,6 @@ module.exports.help = {
 	description: "Circle the images or avatar",
 	usage: "p!circle <mentions>(optional)",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

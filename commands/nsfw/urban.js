@@ -27,5 +27,6 @@ module.exports.help = {
 	description: "This command is used for fetching urban stuff",
 	usage: "p!urban <search stuff>",
 	accessableby: "NSFW/Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

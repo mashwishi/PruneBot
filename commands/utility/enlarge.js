@@ -30,5 +30,6 @@ module.exports.help = {
 	description: "This command is used for enlarging some emoji from everywhere",
 	usage: "p!enlarge <emojis>",
 	accessableby: "Memeber",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

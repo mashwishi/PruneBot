@@ -73,7 +73,7 @@ module.exports.run = async (client, msg, args) => {
 
 	const suembed = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Kicked **${kickTaged.username}#${kickTaged.discriminator}** | **${reason}**`
+			`:bulb: Kicked **${kickTaged.username}#${kickTaged.discriminator}** | **${reason}**`
 		)
 		.setColor("GREEN");
 
@@ -90,5 +90,6 @@ module.exports.help = {
 		"This command is used for kicking people u hates or againsting your server rules.",
 	usage: "p!kick <mentions> <reason>",
 	accessableby: "Kick Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -25,5 +25,6 @@ module.exports.help = {
 	description: "Acts like clyde",
 	usage: "p!clyde <text>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

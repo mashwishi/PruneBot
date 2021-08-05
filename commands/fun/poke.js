@@ -34,5 +34,6 @@ module.exports.help = {
 	description: "This command is used for poke someone",
 	usage: "p!poke <mention>",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

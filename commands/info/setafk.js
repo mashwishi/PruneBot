@@ -19,5 +19,6 @@ module.exports.help = {
 	description: "This command is used for setting yourself as afk.",
 	usage: "p!setafk",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

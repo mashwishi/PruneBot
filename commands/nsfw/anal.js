@@ -29,5 +29,6 @@ module.exports.help = {
 	usage: "p!anal",
 	accessablechannel: "NSFW Channel",
 	accessableby: "NSFW/Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

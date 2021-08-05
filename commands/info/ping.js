@@ -6,6 +6,8 @@ module.exports.run = async (client, message, args) => {
 		`Message Latency: **${
 			Date.now() - message.createdTimestamp
 		}ms**\nDiscord API Latency: **${Math.round(client.ws.ping)}ms**`
+	).addFields(
+		{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
 	);
 	message.channel.send(bbb);
 };
@@ -15,5 +17,6 @@ module.exports.help = {
 	description: "This command is used for pinging the bot.",
 	usage: "p!ping",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 3
 };

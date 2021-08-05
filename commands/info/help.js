@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
+
 	const settings = require("../../config/settings.json");
 	const prefixesdatabase = client.settings.ensure(message.guild.id, settings);
 
@@ -41,15 +42,13 @@ module.exports.run = async (client, message, args) => {
 			.addField(
 				"**:partying_face: Fun**",
 				"`8ball`, `cat`, `deaes256`, `kiss`, `meme`, `ngif`, `pat`, `poke`, `smug`, `thigh`, `tickle`"
-			)			
-			.addField(
-				"**:underage: NSFW**",
-				"`4knsfw`, `anal`, `ass`, `hentai`, `holo`, `pussy`, `porn`, `urban`"
-			)
+			)	
+			.addFields(
+				{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
+			)							
             .addFields(
-				{ name: ':desktop: Github (Source Code)', value: 'https://github.com/mashwishi/PruneBot' },
-				{ name: ':revolving_hearts: Support the Developer:', value: 'https://ko-fi.com/mashwishi' }   
-			  )			
+				{ name: ':desktop: Github Project', value: '[Download Code](https://github.com/mashwishi/PruneBot)', inline: true },
+				{ name: ':revolving_hearts: Support Project', value: '[Donate](https://ko-fi.com/mashwishi)', inline: true },)				  	
 			.setTitle('Prune Bot | Commands')
 			.setFooter(`©${nowyear} ${client.user.username} Created by Mashwishi.\nCommand requested by: ${message.author.username}#${message.author.discriminator}`, `https://i.imgur.com/ypxq7B9.png`)
 			.setThumbnail('https://i.imgur.com/ypxq7B9.png')    
@@ -79,7 +78,10 @@ module.exports.run = async (client, message, args) => {
 						command.help.usage || "No Usage"
 					}\`\`\`\n**Permissions:**\n\`\`\`${
 						command.help.accessableby || "Members"
+					}\`\`\`\n**Cooldown (in seconds):**\n\`\`\`${
+						command.help.cooldown || "No Cooldown"
 					}\`\`\`\n**Aliases:**\n\`\`\`${alia}\`\`\``
+					
 				)
 				.setColor("#4a4b4d")
 				.setFooter(
@@ -102,5 +104,7 @@ module.exports.help = {
 	description: "This command is used for displaying all commands.",
 	usage: "p!help",
 	accessableby: "Members",
-	aliases: []
+	aliases: ['?', 'commands', 'command'],
+	cooldown: 3
 };
+

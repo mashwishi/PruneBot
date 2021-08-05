@@ -20,5 +20,6 @@ module.exports.help = {
 	description: "This command is used for fetching queue from music system.",
 	usage: "p!queue",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -1,6 +1,6 @@
 {
-	"name": "Prune Bot",
-	"version": "1.0.0",
+	"name": "PruneBot",
+	"version": "2.1.0",
 	"main": "shard.js",
 	"description": "A free open source solution to your server and user managing problems, built from scratch with code organization and quality in mind. Our goal is to cover as many functionalities as possible.",
 	"author": "Mashwishi",

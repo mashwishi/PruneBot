@@ -44,5 +44,6 @@ module.exports.help = {
 	description: "This command is used for generating people IN RiP.",
 	usage: "p!roleinfo <roles-ID>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

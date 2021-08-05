@@ -51,5 +51,6 @@ module.exports.help = {
 	description: "Generate Pet Pet pictures.",
 	usage: "p!petpet <mentions / attachments>(optional)",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

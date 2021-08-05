@@ -9,14 +9,14 @@ module.exports.run = async (client, message, args) => {
 			`${emojis.cross} ${message.author.username}, Missing Permission`
 		)
 		.setColor("RED");
-	if (!message.member.hasPermission("ADMINISTRATOR")) {
+	if (!message.member.hasPermission("KICK_MEMBERS") || message.author.id === 221838936866029568) {
 		return message.channel.send(embed6).then(m => m.delete({ timeout: 5000 }));
 	}
     //Bot no permission
     const notice3 = new Discord.MessageEmbed()
     .setDescription(`${emojis.cross} I don't have permission to list people!`)
     .setColor("RED");
-	if (!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) {
+	if (!message.guild.member(client.user).hasPermission("KICK_MEMBERS")) {
 		return message.channel.send(notice3).then(m => m.delete({ timeout: 5000 }));
 	}
 
@@ -61,6 +61,9 @@ module.exports.run = async (client, message, args) => {
                     const newlistMsga = new Discord.MessageEmbed()
                     .setTitle('Prune Bot | Total of '+ memberscount +' User(s)')
                     .setDescription(`Users that has no role: \n` + getUsers(page))
+                    .addFields(
+                      { name: 'Important Note:', value: "25 users can be only kicked per cooldown command."} 
+                    )                       
                     .setAuthor('Join our Discord Server', 'https://i.imgur.com/hKeHeEy.gif', 'https://discord.io/LIMYAW')
                     .setThumbnail('https://i.imgur.com/ypxq7B9.png')                                  
                     .setColor('#b491c8')                                        
@@ -73,6 +76,9 @@ module.exports.run = async (client, message, args) => {
                     const newlistMsgb = new Discord.MessageEmbed()
                     .setTitle('Prune Bot | Total of '+ memberscount +' User(s)')
                     .setDescription(`Users that has no role: \n` + getUsers(page))
+                    .addFields(
+                      { name: 'Important Note:', value: "25 users can be only kicked per cooldown command."} 
+                    )                       
                     .setAuthor('Join our Discord Server', 'https://i.imgur.com/hKeHeEy.gif', 'https://discord.io/LIMYAW')
                     .setThumbnail('https://i.imgur.com/ypxq7B9.png')                                  
                     .setColor('#b491c8')                                      
@@ -85,16 +91,34 @@ module.exports.run = async (client, message, args) => {
                   .setDescription(`Users that has no role.`)
                   .setAuthor('Join our Discord Server', 'https://i.imgur.com/hKeHeEy.gif', 'https://discord.io/LIMYAW')
                   .setThumbnail('https://i.imgur.com/ypxq7B9.png')                        
-                  .setColor('#b491c8')      
-                  .addFields(
-                    { name: 'Operation Successful', value: memberscount + " user(s) has been kicked."} 
-                  )                                         
+                  .setColor('#b491c8')                                           
                   .setFooter(`©${nowyear} ${client.user.username} Created by Mashwishi.\nCommand requested by: ${message.author.username}#${message.author.discriminator}`, `https://i.imgur.com/ypxq7B9.png`)   
-                        let members = message.guild.members.cache.filter(member => member.roles.cache.array().length < 2)
+                      
+                      //2.0.0 (Current) - Kick users without role
+                      //let members = message.guild.members.cache.filter(member => member.roles.cache.array().length < 2)
+                      //members.forEach(m => {
+                      //  m.kick()
+                      //  .catch(console.error);
+                      //});  
+
+                      //2.1.0 - Limiting the kicking for 25 users per 5 minutes
+                      //Reason: Even discord.js already have feature to avoid rate-limited
+                      //I just want to make things sure to keep our bot running safe.
+                      let members = message.guild.members.cache.filter(member => member.roles.cache.array().length < 2)
+                      let count = 0
                       members.forEach(m => {
-                        m.kick()
-                        .catch(console.error);
-                      });    
+                      if(count == 25) return
+                      count++
+                      m.kick()
+                      .then(console.log)
+                      .catch(console.error);
+                      });        
+                      
+                      ukicked.addFields(
+                        //{ name: 'Operation Successful', value: memberscount + " user(s) has been kicked."} 
+                        { name: 'Operation Successful', value: count + " user(s) has been kicked."} 
+                      )    
+
                       listMsg.reactions.removeAll();
                       listMsg.edit(ukicked);
                     break;     
@@ -148,5 +172,6 @@ module.exports.help = {
 	description: "This command is used for listing and kicking all users with no role.",
 	usage: "p!unorole",
 	accessableby: "ADMINISTRATOR",
-	aliases: []
+	aliases: [],
+	cooldown: 300
 };

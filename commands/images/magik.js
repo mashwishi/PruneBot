@@ -70,5 +70,6 @@ module.exports.help = {
 	description: "This command is used for magik.",
 	usage: "p!magik",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

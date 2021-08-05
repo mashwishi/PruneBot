@@ -20,5 +20,6 @@ module.exports.help = {
 	description: "This command is used for posting cat's images randomly.",
 	usage: "p!cat",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

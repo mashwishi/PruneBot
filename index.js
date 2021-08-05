@@ -22,6 +22,9 @@ const nz_date_string = new Date().toLocaleString("en-US", {
 	timeZone: "Asia/Hong_Kong"
 });
 
+client.commands = new Map();
+client.aliases = new Map();
+
 client.commands = new Discord.Collection();
 client.slcommands = new Discord.Collection();
 client.aliases = new Discord.Collection();

@@ -31,5 +31,6 @@ module.exports.help = {
 	description: "This command is used for generating some cool memes.",
 	usage: "p!meme",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

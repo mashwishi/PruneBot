@@ -16,5 +16,6 @@ module.exports.help = {
 	description: "N/A",
 	usage: "p!send-message [Message]",
 	accessableby: "Bot Owners",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

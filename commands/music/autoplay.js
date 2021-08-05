@@ -17,5 +17,6 @@ module.exports.help = {
 		"This command is used for enabling or disabling autoplay features for music system.",
 	usage: "p!autoplay",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

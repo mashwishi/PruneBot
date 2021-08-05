@@ -45,5 +45,6 @@ module.exports.help = {
 		"Check the weather in your location or area within newest climate/weather status",
 	usage: "p!weather <location/area>",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

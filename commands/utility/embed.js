@@ -43,5 +43,6 @@ module.exports.help = {
 	description: "This command is used for embedding stuff in discord",
 	usage: "p!embed <title> <desc>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

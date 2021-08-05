@@ -27,5 +27,6 @@ module.exports.help = {
 		"This command is used for changing volume when playing the songs",
 	usage: "p!volume <value>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

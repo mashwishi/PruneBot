@@ -51,5 +51,6 @@ module.exports.help = {
 		"This command is used for reload all commands without rebooting/restart the bot.",
 	usage: "p!reload-all",
 	accessableby: "Bot Owners",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

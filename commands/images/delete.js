@@ -51,5 +51,6 @@ module.exports.help = {
 		"This command is used for delete someone u hates with windows trash bin",
 	usage: "p!delete [<mention> or <attachments>]",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -187,5 +187,6 @@ module.exports.help = {
 		"This command is used for translating stuff. Example: p!translate zh-en 你好, response: hello here",
 	usage: "p!translate <language>-<to-translate-language> <text>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

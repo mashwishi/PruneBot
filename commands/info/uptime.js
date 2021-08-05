@@ -63,6 +63,9 @@ module.exports.run = async (client, message, args) => {
 					.addField("Uptime Percentage", `${numberas}%`)
 					//	.addField("Now Time", nowtime)
 					//	.addField('Bootup Time', derweSA);;
+					.addFields(
+						{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
+					)						
 					.setFooter(`Last Launched at ${derweSA}`);
 
 				message.edit(serverembedss);
@@ -75,5 +78,6 @@ module.exports.help = {
 	description: "This command is used for reporting bot's uptime",
 	usage: "p!uptime",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 180
 };

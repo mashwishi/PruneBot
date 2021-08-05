@@ -31,5 +31,6 @@ module.exports.help = {
 	description: "This command is used for generating pat.",
 	usage: "p!pat <mentions>",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -13,5 +13,6 @@ module.exports.help = {
 		"To support the bot please vote every 12 hours in \n - https://discordlist.space/bot/814580247973986314  \n - https://discord.ly/prune-bot",
 	usage: "p!vote",
 	accessableby: "Everyone",
-	aliases: []
+	aliases: [],
+	cooldown: 180
 };

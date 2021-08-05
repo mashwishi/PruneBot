@@ -85,5 +85,6 @@ module.exports.help = {
 	description: "This command is used for creating a giveawya for events.",
 	usage: "p!gstart <channel> <duration> <winner> <prize>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

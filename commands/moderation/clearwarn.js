@@ -54,7 +54,7 @@ module.exports.run = async (client, message, args) => {
 	const embed = new Discord.MessageEmbed()
 		.setColor("GREEN")
 		.setDescription(
-			`${emojis.tick} **${client.moderationdb.get(
+			`:bulb: **${client.moderationdb.get(
 				key,
 				"warns"
 			)}** warnings have been cleared for ${user.username}#${
@@ -72,5 +72,6 @@ module.exports.help = {
 	description: "Clear the warnings",
 	usage: "p!clearwarn <mention>",
 	accessableby: "Manage Roles",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

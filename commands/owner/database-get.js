@@ -20,5 +20,6 @@ module.exports.help = {
 	description: "N/A",
 	usage: "p!database-get",
 	accessableby: "Bot Owners",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

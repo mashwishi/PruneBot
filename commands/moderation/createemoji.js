@@ -51,5 +51,6 @@ module.exports.help = {
 	description: "Create emoji easily with commands",
 	usage: "p!createemoji <name> <attachments>",
 	accessableby: "Manage Emojis",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

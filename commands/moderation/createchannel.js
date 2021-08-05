@@ -37,5 +37,6 @@ module.exports.help = {
 	description: "Create channel easily with commands",
 	usage: "p!createchannel <name> <type: text/voice>",
 	accessableby: "Manage Channels",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

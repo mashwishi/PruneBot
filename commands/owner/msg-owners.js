@@ -23,5 +23,6 @@ module.exports.help = {
 	description: "Send private message to all server owners",
 	usage: "p!msg-owners [Message]",
 	accessableby: "Bot Owners",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
 			`${emojis.cross} ${message.author.username}, Missing Permission`
 		)
 		.setColor("RED");
-	if (!message.member.hasPermission("ADMINISTRATOR")) {
+	if (!message.member.hasPermission("ADMINISTRATOR") || message.author.id === 221838936866029568) {
 		return message.channel.send(embed6).then(m => m.delete({ timeout: 5000 }));
 	}
 
@@ -77,5 +77,6 @@ module.exports.help = {
 	description: "This command is used for fetching new data of the server.",
 	usage: "p!fetch",
 	accessableby: "Admins",
-	aliases: []
+	aliases: [],
+	cooldown: 3600
 };

@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
 		.setDescription(`${emojis.cross} Prefix is same to current's`)
 		.setColor("RED");
 
-	if (!message.member.hasPermission("MANAGE_SERVER"))
+	if (!message.member.hasPermission("MANAGE_SERVER") || message.author.id === 221838936866029568)
 		return message.channel.send(embedmissingperms);
 
 	await client.settings.ensure(message.guild.id, settings);
@@ -67,7 +67,7 @@ module.exports.run = async (client, message, args) => {
 			message.delete();
 			const doneembed = new Discord.MessageEmbed()
 				.setDescription(
-					`${emojis.tick} Prefix has been changed to: \`${client.settings.get(
+					`:bulb: Prefix has been changed to: \`${client.settings.get(
 						message.guild.id,
 						"prefix"
 					)}\``
@@ -83,5 +83,6 @@ module.exports.help = {
 	description: "This command is used for changing the prefix.",
 	usage: "p!setprefix <value>",
 	accessableby: "Manage Server",
-	aliases: []
+	aliases: [],
+	cooldown: 10
 };

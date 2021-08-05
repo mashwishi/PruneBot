@@ -29,5 +29,6 @@ module.exports.help = {
 		"This command is used for asking the bot what he wanted to answer as 8ball.",
 	usage: "p!8ball <questions>",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

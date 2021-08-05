@@ -20,5 +20,6 @@ module.exports.help = {
 	description: "Generating NSFW wallpapers randomly",
 	usage: "p!wallpaper",
 	accessableby: "NSFW/Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

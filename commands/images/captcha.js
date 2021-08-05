@@ -63,5 +63,6 @@ module.exports.help = {
 	description: "This command is used for posting dog's images randomly.",
 	usage: "p!captcha",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -85,5 +85,5 @@ module.exports.help = {
 	description: "Check who is him/her",
 	usage: "p!whois <mention or keep blank>",
 	accessableby: "Members",
-	aliases: []
+	aliases: [],
 };

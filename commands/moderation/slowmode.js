@@ -52,7 +52,7 @@ exports.run = (client, message, args) => {
 	});
 	const bsuembed = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Set channel's slowmode to **${duration}s** `
+			`:bulb: Set channel's slowmode to **${duration}s** `
 		)
 		.setColor("GREEN");
 
@@ -65,5 +65,6 @@ module.exports.help = {
 		"This command is used for changing the slowmode as settings page cannot.",
 	usage: "p!slowmode <1-21600>",
 	accessableby: "Manage Channels",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

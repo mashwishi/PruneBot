@@ -25,5 +25,6 @@ module.exports.help = {
 	usage: "p!hentai",
 	accessablechannel: "NSFW Channel",
 	accessableby: "NSFW/Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

@@ -49,5 +49,6 @@ module.exports.help = {
 	description: "Send embeded private message to all server owners",
 	usage: "p!emsg-owners [Message]",
 	accessableby: "Bot Owners",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

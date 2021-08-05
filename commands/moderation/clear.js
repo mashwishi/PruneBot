@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args) => {
 
 	const kntlembed = new Discord.MessageEmbed()
 		.setColor("GREEN")
-		.setDescription(`${emojis.tick} Cleared **${args[0]}** Message here`);
+		.setDescription(`:bulb: Cleared **${args[0]}** Message here`);
 
 	try {
 		message.delete();
@@ -67,5 +67,6 @@ module.exports.help = {
 	description: "Clear the message with amount",
 	usage: "p!clear <amount>(1-99)",
 	accessableby: "Manage Message",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

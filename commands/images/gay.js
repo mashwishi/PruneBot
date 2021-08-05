@@ -51,5 +51,6 @@ module.exports.help = {
 	description: "This command is used for making an image to be rainbow",
 	usage: "p!gay <mentions or attachment>",
 	accessableby: "Memeber",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

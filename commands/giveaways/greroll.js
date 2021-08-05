@@ -56,5 +56,6 @@ module.exports.help = {
 	description: "This command is used for rerolling giveaways.",
 	usage: "p!greroll <giveaway-message-ID>",
 	accessableby: "Manage Messages",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

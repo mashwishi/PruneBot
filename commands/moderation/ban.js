@@ -91,7 +91,7 @@ module.exports.run = async (client, msg, args) => {
 		.setFooter("• Ban User Information"); //
 	const bsuembed = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Banned **${banTaged.username}#${banTaged.discriminator}** | **${reason}**`
+			`:bulb: Banned **${banTaged.username}#${banTaged.discriminator}** | **${reason}**`
 		)
 		.setColor("GREEN");
 
@@ -109,5 +109,6 @@ module.exports.help = {
 	description: "This command is used for banning the members you dont like.",
 	usage: "p!ban <mentions> <reason>(optional)",
 	accessableby: "Ban Members",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

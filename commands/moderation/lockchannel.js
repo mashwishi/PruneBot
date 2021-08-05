@@ -3,7 +3,7 @@ const ms = require("ms");
 
 module.exports.run = (client, message, args) => {
 	const dfgrdgdfgdf = new Discord.MessageEmbed()
-		.setDescription(`${emojis.tick} **Lockdown lifted**`)
+		.setDescription(`:bulb: **Lockdown lifted**`)
 		.setColor("GREEN");
 	const notice3 = new Discord.MessageEmbed()
 		.setDescription(
@@ -56,7 +56,7 @@ module.exports.run = (client, message, args) => {
 			.then(() => {
 				const bsuembed = new Discord.MessageEmbed()
 					.setDescription(
-						`${emojis.tick} Locked the channel down for **${ms(ms(time), {
+						`:bulb: Locked the channel down for **${ms(ms(time), {
 							long: true
 						})}**`
 					)
@@ -87,5 +87,6 @@ module.exports.help = {
 	description: "This command is used for locking the channels.",
 	usage: "p!lockchannel <duration>",
 	accessableby: "Manage Channels",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

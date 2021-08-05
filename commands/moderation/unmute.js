@@ -59,7 +59,7 @@ module.exports.run = async (client, message, args) => {
 		.setFooter("• Unmute User Information");
 	const embed5 = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.tick} Unmuted **${member.username}#${member.discriminator}**`
+			`:bulb: Unmuted **${member.username}#${member.discriminator}**`
 		)
 		.setColor("GREEN");
 
@@ -93,5 +93,6 @@ module.exports.help = {
 	description: "This command is used for unmuting someone",
 	usage: "p!unmute <mention>",
 	accessableby: "Manage Roles",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

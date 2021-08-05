@@ -10,10 +10,17 @@ module.exports = async client => {
 			const command = require(`../commands/${files}/${commands}`);
 			const commandName = commands.split(".")[0];
 			console.log(`Command Loaded ${commands}`);
+			
 			client.commands.set(commandName, command);
 			command.help.aliases.forEach(alias => {
 				client.aliases.set(alias, commandName);
+			});	
+
+			client.commands.set(command.help.name, command);
+			command.help.aliases.forEach(alias => {
+				client.aliases.set(alias, command.help.name);
 			});
+
 		}
 	}
 };

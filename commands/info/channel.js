@@ -25,5 +25,6 @@ module.exports.help = {
 	description: "Checking channel status.",
 	usage: "p!channel <channel-mentions>(optional)",
 	accessableby: "Member",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

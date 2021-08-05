@@ -18,5 +18,6 @@ module.exports.help = {
 	description: "This command is used for skiping songs.",
 	usage: "p!skip",
 	accessableby: "Manage Server",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };

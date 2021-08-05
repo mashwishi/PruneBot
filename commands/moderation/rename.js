@@ -28,7 +28,7 @@ exports.run = (client, message, args) => {
 		message.channel.send(embed3);
 	}
 	const embed = new Discord.MessageEmbed().setDescription(
-		`${emojis.tick} **Nickname has been set!`
+		`:bulb: **Nickname has been set!`
 	);
 	message.channel.send(embed);
 };
@@ -38,5 +38,6 @@ module.exports.help = {
 	description: "This command is used for renaming someone's nickname.",
 	usage: "p!rename <mentions> <nickname>",
 	accessableby: "Manage Nicknames",
-	aliases: []
+	aliases: [],
+	cooldown: 5
 };
