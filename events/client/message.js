@@ -1,10 +1,7 @@
 const Discord = require("discord.js");
 const settings = require("../../config/settings.json");
 
-//const cooldowns = new Discord.Collection();
-
-//create cooldowns map
-const cooldowns = new Map();
+const cooldowns = new Discord.Collection();
 
 module.exports = async (client, message) => {
 	if (message.author.bot) return;
@@ -21,47 +18,44 @@ module.exports = async (client, message) => {
 	}
 
 	if (!message.content.startsWith(prefixesdatabase.prefix)) return;
-
-	let commandText = message.content.split(" ")[0].slice(prefixesdatabase.prefix.length);
-	if (!client.commands.has(commandText)) {
-		commandText = client.aliases.get(commandText);
-		if (!commandText) return;
-	}
-	
-	const command = client.commands.get(commandText);
+	const command = message.content
+		.split(" ")[0]
+		.slice(prefixesdatabase.prefix.length);
 	const args = message.content.split(" ").slice(1);
-	
-	if (!cooldowns.has(command.help.name)) {
-		cooldowns.set(command.help.name, new Discord.Collection());
+	if (!cooldowns.has(command.name)) {
+		cooldowns.set(command.name, new Discord.Collection());
 	}
-	
 	const now = Date.now();
-	const timestamps = cooldowns.get(command.help.name);
-	const cooldownAmount = (command.help.cooldown || 2) * 1000;
-
+	const timestamps = cooldowns.get(command.name);
+	const cooldownAmount = (command.cooldown || 15) * 1000;
 	if (timestamps.has(message.author.id)) {
 		const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
 		if (now < expirationTime) {
-			const timeLeft = (expirationTime - now) / 1000;
-			const timeLeftfinal = new Date(timeLeft * 1000).toISOString().substr(11, 8)
+			const timeLeft = (expirationTime - now) / 2000;
 			return message.reply(
 				`Before using **${
 					prefixesdatabase.prefix
-				}${commandText}**, please wait for **${timeLeftfinal}** second for cooldowns!`
-			).then(m => m.delete({ timeout: 5000 }));
+				}${command}**, please wait for **${timeLeft.toFixed(
+					1
+				)} second for cooldowns!**`
+			);
 		}
 	}
-	
 	timestamps.set(message.author.id, now);
 	setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
-	
+	let cmd;
+	if (client.commands.has(command)) {
+		cmd = client.commands.get(command);
+	} else if (client.aliases.has(command)) {
+		cmd = client.commands.get(client.aliases.get(command));
+	}
 	try {
-		command.run(client, message, args);
+		cmd.run(client, message, args);
 	} catch (e) {
-		return console.log(`Invalid command: ${commandText}`);
+		return console.log(`Invalid command: ${command}`);
 	} finally {
 		console.log(
-			`${message.author.username} using command ${prefixesdatabase.prefix}${commandText}`
+			`${message.author.username} using command ${prefixesdatabase.prefix}${command}`
 		);
 	}
 };
