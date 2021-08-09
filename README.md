@@ -27,7 +27,9 @@
       <td>
          <p align="center">
             <br/>
-            <a href="https://discordlist.space/bot/814580247973986314"><img src="https://api.discordlist.space/v2/bots/814580247973986314/widget?background=202225&radius=5"></a>
+<a href="https://top.gg/bot/814580247973986314">
+  <img src="https://top.gg/api/widget/814580247973986314.svg" alt="Prune Bot" />
+  </a>
          </p>
       </td>
    </tr>
