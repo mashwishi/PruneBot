@@ -5,7 +5,6 @@
   <h3>Version 2.1.0</h3>
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
-  <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/EnXm6GaWa3">Join now!</a></h4>
   
   <h6>Fellow Developers that guide me doing this from Discord Server Community of <a href="https://discord.gg/discord-api">Discord API</a>.
   <br>Special Thanks to our contributors and helper <a href="https://github.com/esfox">esfox</a>, <a href="https://github.com/itsjusttriz">itsjusttriz</a> and <a href="https://github.com/Hickacou">Hickacou</a>!</h6>
@@ -113,7 +112,6 @@ We have more than 80 commands in this bot, and they are **featured** and having 
 
 
 ## Getting Started
-   <h4>Do you need a free 24/7 Discord Hosting? <a href="https://discord.gg/EnXm6GaWa3">Join now!</a></h4>
 This is how you will set-up your self-hosted Prune Bot.
 
 
