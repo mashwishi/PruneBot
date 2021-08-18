@@ -1,14 +1,4 @@
 {
-	"prefix": "dev!",
-	"ownerID": "221838936866029568",
-	"everyoneMention": false,
-	"hostedBy": true,
-	"emoji": {
-		"play": "▶️",
-		"stop": "⏹️",
-		"queue": "📄",
-		"success": "☑️",
-		"repeat": "🔁",
-		"error": "❌"
-	}
+	"prefix": "pb!",
+	"ownerID": "221838936866029568"
 }
