@@ -3,6 +3,7 @@ const fs = require("fs");
 const settings = require("../../config/settings.json");
 
 module.exports.run = async (client, message, args) => {
+
 	const embedmissingperms = new Discord.MessageEmbed()
 		.setDescription(
 			`${emojis.cross} ${message.author.username}, Missing Permission!`
@@ -15,7 +16,7 @@ module.exports.run = async (client, message, args) => {
 
 	const embedtoolong = new Discord.MessageEmbed()
 		.setDescription(
-			`${emojis.cross} Prefix's length shouldn't be longer than 3 letters`
+			`${emojis.cross} Prefix's length shouldn't be longer than 5 letters`
 		)
 		.setColor("RED");
 	const embedsame = new Discord.MessageEmbed()
@@ -29,7 +30,7 @@ module.exports.run = async (client, message, args) => {
 
 	if (!args[0]) return message.channel.send(embedmissing);
 
-	if (args[0].length > 3) return message.channel.send(embedtoolong);
+	if (args[0].length > 5) return message.channel.send(embedtoolong);
 	if (args[0] == client.settings.get(message.guild.id, "prefix"))
 		return message.channel.send(embedsame);
 

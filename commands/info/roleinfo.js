@@ -25,6 +25,8 @@ module.exports.run = async (client, message, args) => {
 		true: "Yes"
 	};
 
+	
+
 	const roleemebed = new Discord.MessageEmbed()
 		.setTitle(`Role Information: ${gRole.name}`)
 		.setColor("#000000")

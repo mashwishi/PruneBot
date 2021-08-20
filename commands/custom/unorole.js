@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const config = require("../../config/config.json");
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {      
 
     //User no permission
 	const embed6 = new Discord.MessageEmbed()

@@ -1,1 +1,1 @@
-worker: node shard.js
+worker: npm start

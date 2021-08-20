@@ -2,7 +2,7 @@
   <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands"><img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/></a>
   <h1><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands">Prune Bot </a></h1>
 
-  <h3>Version 2.1.0</h3>
+  <h3>Version 2.2.0</h3>
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   

@@ -34,10 +34,7 @@ module.exports.run = async (client, message) => {
 					"Uptime",
 					`${days}d ${hours}h ${minutes}m ${seconds}.${milliseconds}s`,
 					true
-				)
-				.addFields(
-					{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
-				)					
+				)				
 				.setFooter(
 					"PruneBot 2021",
 					"https://cdn.Mashwishi.tk/file/MashwishiCDN/79654c28218d88a8cfefe9c01f6d338c.png"

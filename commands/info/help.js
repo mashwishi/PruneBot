@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
 			.setDescription(
 				`**My prefix:** \`${prefixesdatabase.prefix}\` , Slash Commands list for \`/help\`\nClick [HERE](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands) to invite me to your server.`
 			)
-			.addField("**:gear: Basic**", "`help`, `ping`, `vote`, `uptime`, `setprefix`")
+			.addField("**:gear: Basic**", "`help`, `ping`, `vote`, `votes`,`uptime`, `setprefix`")
 			.addField(
 				"**🛠️ Moderation**",
 				"`ban`, `clear`, `clearwarn`, `createchannel`, `createemoji`, `kick`, `lockchannel`, `mute`, `rename`, `slowmode`, `unban`, `unlockchannel`, `unmute`, `warn`, `warnings`"
@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) => {
 			)			
 			.addField(
 				"**:tada: Giveaways**",
-				"`start-giveaway`, `reroll`, `end-giveaway`"
+				"`gstart`, `greroll`, `gend`"
 			)
 			.addField(
 				"**:frame_photo: Images**",
@@ -42,9 +42,6 @@ module.exports.run = async (client, message, args) => {
 			.addField(
 				"**:partying_face: Fun**",
 				"`8ball`, `cat`, `deaes256`, `kiss`, `meme`, `ngif`, `pat`, `poke`, `smug`, `thigh`, `tickle`"
-			)	
-			.addFields(
-				{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
 			)							
             .addFields(
 				{ name: ':desktop: Github Project', value: '[Download Code](https://github.com/mashwishi/PruneBot)', inline: true },

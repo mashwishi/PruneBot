@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const config = require("../../config/config.json");
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args) => {   	   
 
     //User no permission
 	const embed6 = new Discord.MessageEmbed()
@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("RED");
 	if (!message.guild.member(client.user).hasPermission("ADMINISTRATOR")) {
 		return message.channel.send(notice3).then(m => m.delete({ timeout: 5000 }));
-	}
+	}    
 
     //Process
     const ListEmbedP = new Discord.MessageEmbed() 
@@ -61,16 +61,15 @@ module.exports.run = async (client, message, args) => {
     //Fetching data (new)
     try
     {
-        await message.guild.members.fetch()
-        .then(console.log)
+        await message.guild.members.fetch();
+        //.then(console.log)
     }
     catch (error)
     {
         console.error(error);
         return listMsg.edit(ListEmbedF);     
     }
-    return listMsg.edit(ListEmbedS);
-       
+    return listMsg.edit(ListEmbedS);       
 };
 module.exports.help = {
 	name: "fetch",

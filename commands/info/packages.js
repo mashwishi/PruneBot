@@ -8,15 +8,12 @@ module.exports.run = async (client, message, args) => {
 	
     const embed = new Discord.MessageEmbed()
 			.setColor("#6633CC")
-			.setDescription(`[Repository](https://discord.gg/j3Mx7cHgXF) **|** [Bugs](https://discord.gg/j3Mx7cHgXF) **|** [License](https://github.com/mashwishi/PruneBot/blob/master/LICENSE)`)
+			.setDescription(`[Repository](https://github.com/mashwishi/PruneBot) **|** [Bugs](https://github.com/mashwishi/PruneBot/issues) **|** [License](https://github.com/mashwishi/PruneBot/blob/master/LICENSE)`)
 			.addFields(
 				{ name: 'Node Engine', value: `Version: [${package.engines.node}](https://nodejs.org)`, inline: true },  
                 { name: 'Information', value: `[Read Me](${package.homepage})`, inline: true }, 
                 { name: 'Author', value: `[${package.author}](https://github.com/mashwishi)`, inline: true }
-			)	            
-			.addFields(
-				{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
-			)							
+			)	            						
             .addFields(
 				{ name: '@discordjs/opus', value: 'Version: ^0.5.3', inline: true },
 				{ name: 'canvacord', value: 'Version: ^5.2.1', inline: true },                

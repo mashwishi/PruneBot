@@ -23,12 +23,12 @@ module.exports.run = async (client, message, args) => {
 		.addFields(
 			{ 
 				name: 'Prune Bot [Blue]', 
-				value: '[Invite Me](https://discord.com/api/oauth2/authorize?client_id=815785457672650802&permissions=8&scope=bot%20applications.commands)\n**Prefix:** pbb!\n**Ram:** 2GB\n**CPU:** INTEL XEON', 
+				value: '[Invite Me](https://discord.com/api/oauth2/authorize?client_id=815785457672650802&permissions=8&scope=bot%20applications.commands)\n**Prefix:** pbb!\n**Ram:** 16GB\n**CPU:** INTEL XEON', 
 				inline: true 
 			},
 			{ 
 				name: 'Prune Bot [Green]', 
-				value: '[Invite Me](https://discord.com/api/oauth2/authorize?client_id=869637540896989234&permissions=8&scope=bot%20applications.commands)\n**Prefix:** pbg!\n**Ram:** 1GB\n**CPU:** INTEL XEON', 
+				value: '[Invite Me](https://discord.com/api/oauth2/authorize?client_id=869637540896989234&permissions=8&scope=bot%20applications.commands)\n**Prefix:** pbg!\n**Ram:** 16GB\n**CPU:** INTEL XEON', 
 				inline: true 
 			}               
 		)		
@@ -47,9 +47,6 @@ module.exports.run = async (client, message, args) => {
 		.addFields(
 			{ name: ':desktop: Github Project', value: '[Download Code](https://github.com/mashwishi/PruneBot)', inline: true },
 			{ name: ':revolving_hearts: Support Project', value: '[Donate](https://ko-fi.com/mashwishi)', inline: true }
-		)	
-		.addFields(
-			{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
 		)									                                                                                          		  	
 		.setFooter(`©${nowyear} ${client.user.username} Created by Mashwishi.\nCommand requested by: ${message.author.username}#${message.author.discriminator}`, `https://i.imgur.com/ypxq7B9.png`)
 		.setThumbnail('https://i.imgur.com/ypxq7B9.png');    

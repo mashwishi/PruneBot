@@ -62,10 +62,7 @@ module.exports.run = async (client, message, args) => {
 					)
 					.addField("Uptime Percentage", `${numberas}%`)
 					//	.addField("Now Time", nowtime)
-					//	.addField('Bootup Time', derweSA);;
-					.addFields(
-						{ name: 'Powered by DarkHost', value: '[Host your Discord Bot 24/7 For Free](https://discord.gg/EnXm6GaWa3)'}   
-					)						
+					//	.addField('Bootup Time', derweSA);;						
 					.setFooter(`Last Launched at ${derweSA}`);
 
 				message.edit(serverembedss);

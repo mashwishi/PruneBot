@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const config = require("./config/config.json");
 const Enmap = require("enmap");
 const Discord = require("discord.js");
@@ -24,7 +25,6 @@ const nz_date_string = new Date().toLocaleString("en-US", {
 
 client.commands = new Map();
 client.aliases = new Map();
-
 client.commands = new Discord.Collection();
 client.slcommands = new Discord.Collection();
 client.aliases = new Discord.Collection();
