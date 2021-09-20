@@ -2,8 +2,10 @@
   <a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands"><img src="https://i.imgur.com/s4q1Wz3.png" width="15%"/></a>
   <h1><a href="https://discord.com/api/oauth2/authorize?client_id=814580247973986314&permissions=8&scope=bot%20applications.commands">Prune Bot </a></h1>
 
-  <h3>Source Code Version 2.2.0</h3>
-  <h3>Bot Version 3.0.0</h3>
+  <h3>Source Code Version 2.2.0 | Bot Version 3.0.0</h3>
+
+<p>Sorry, But I no longer share the recent updates of this Discord Bot, It was due to users removing all the credits to the sources including to the packages command. I have decided to stop the development and updates publicly. At the moment only supporters will only gain access to the private source code. Thank you!</p>
+ 
 
   <h4>Created by Mashwishi | Powered by <a href="https://discord.js.org/">Discord.js</a></h4>
   
